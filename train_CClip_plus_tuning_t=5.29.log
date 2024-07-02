@@ -1,0 +1,941 @@
+nohup: 忽略输入
+srun: job 3517309 queued and waiting for resources
+srun: job 3517309 has been allocated resources
+srun: Job 3517309 scheduled successfully!
+Current QUOTA_TYPE is [reserved], which means the job has occupied quota in RESERVED_TOTAL under your partition.
+Current PHX_PRIORITY is normal
+
+/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:401] [c10d] The server socket has failed to bind to [::]:8556 (errno: 98 - Address already in use).
+[W socket.cpp:401] [c10d] The server socket has failed to bind to 0.0.0.0:8556 (errno: 98 - Address already in use).
+[E socket.cpp:435] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 193, in <module>
+    main()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 189, in main
+    launch(args)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 174, in launch
+    run(args)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/run.py", line 752, in run
+    elastic_launch(
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 236, in launch_agent
+    result = agent.run()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 709, in run
+    result = self._invoke_run(role)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 844, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 678, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 538, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:8556 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:8556 (errno: 98 - Address already in use).
+/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:401] [c10d] The server socket has failed to bind to [::]:8556 (errno: 98 - Address already in use).
+[W socket.cpp:401] [c10d] The server socket has failed to bind to [::]:8556 (errno: 98 - Address already in use).
+[W socket.cpp:401] [c10d] The server socket has failed to bind to 0.0.0.0:8556 (errno: 98 - Address already in use).
+[W socket.cpp:401] [c10d] The server socket has failed to bind to 0.0.0.0:8556 (errno: 98 - Address already in use).
+[E socket.cpp:435] [c10d] The server socket has failed to listen on any local network address.
+[E socket.cpp:435] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 193, in <module>
+    main()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 189, in main
+    launch(args)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 174, in launch
+    run(args)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/run.py", line 752, in run
+    elastic_launch(
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 236, in launch_agent
+    result = agent.run()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 709, in run
+    result = self._invoke_run(role)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 844, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 678, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 538, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:8556 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:8556 (errno: 98 - Address already in use).
+Traceback (most recent call last):
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 193, in <module>
+    main()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 189, in main
+    launch(args)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launch.py", line 174, in launch
+    run(args)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/run.py", line 752, in run
+    elastic_launch(
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 236, in launch_agent
+    result = agent.run()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 709, in run
+    result = self._invoke_run(role)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 844, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 678, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 538, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/mnt/petrelfs/lijiaxing1/anaconda3/envs/control/lib/python3.8/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:8556 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:8556 (errno: 98 - Address already in use).
+srun: error: SH-IDC1-10-140-24-48: tasks 0-2: Exited with exit code 1
+Loading vision model config from cn_clip/clip/model_configs/ViT-H-14.json
+Loading vision model config from cn_clip/clip/model_configs/ViT-H-14.json
+Loading text model config from cn_clip/clip/model_configs/RoBERTa-wwm-ext-large-chinese.json
+Loading text model config from cn_clip/clip/model_configs/RoBERTa-wwm-ext-large-chinese.json
+Loading vision model config from cn_clip/clip/model_configs/ViT-H-14.json
+Loading text model config from cn_clip/clip/model_configs/RoBERTa-wwm-ext-large-chinese.json
+Loading vision model config from cn_clip/clip/model_configs/ViT-H-14.json
+Loading text model config from cn_clip/clip/model_configs/RoBERTa-wwm-ext-large-chinese.json
+2024-05-29,20:31:54 | INFO | Rank 1 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,20:31:54 | INFO | Rank 2 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,20:31:54 | INFO | Rank 3 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,20:31:54 | INFO | Rank 0 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,20:31:54 | INFO | Rank 2 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,20:31:54 | INFO | Rank 2 | Use GPU: 2 for training
+2024-05-29,20:31:54 | INFO | Rank 3 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,20:31:54 | INFO | Rank 3 | Use GPU: 3 for training
+2024-05-29,20:31:54 | INFO | Rank 0 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,20:31:54 | INFO | Rank 1 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,20:31:54 | INFO | Rank 1 | Use GPU: 1 for training
+2024-05-29,20:31:54 | INFO | Rank 0 | Params:
+2024-05-29,20:31:54 | INFO | Rank 2 | => begin to load checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt'
+2024-05-29,20:31:54 | INFO | Rank 0 |   accum_freq: 1
+2024-05-29,20:31:54 | INFO | Rank 1 | => begin to load checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt'
+2024-05-29,20:31:54 | INFO | Rank 0 |   aggregate: True
+2024-05-29,20:31:54 | INFO | Rank 0 |   batch_size: 64
+2024-05-29,20:31:54 | INFO | Rank 3 | => begin to load checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt'
+2024-05-29,20:31:54 | INFO | Rank 0 |   bert_weight_path: None
+2024-05-29,20:31:54 | INFO | Rank 0 |   beta1: 0.9
+2024-05-29,20:31:54 | INFO | Rank 0 |   beta2: 0.98
+2024-05-29,20:31:54 | INFO | Rank 0 |   checkpoint_path: /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints
+2024-05-29,20:31:54 | INFO | Rank 0 |   clip_weight_path: None
+2024-05-29,20:31:54 | INFO | Rank 0 |   context_length: 52
+2024-05-29,20:31:54 | INFO | Rank 0 |   debug: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   device: cuda:0
+2024-05-29,20:31:54 | INFO | Rank 0 |   distllation: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   eps: 1e-06
+2024-05-29,20:31:54 | INFO | Rank 0 |   freeze_vision: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   gather_with_grad: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   grad_checkpointing: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   kd_loss_weight: 0.5
+2024-05-29,20:31:54 | INFO | Rank 0 |   local_device_rank: 0
+2024-05-29,20:31:54 | INFO | Rank 0 |   log_interval: 10
+2024-05-29,20:31:54 | INFO | Rank 0 |   log_level: 20
+2024-05-29,20:31:54 | INFO | Rank 0 |   log_path: /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/out_2024-05-29-12-31-43.log
+2024-05-29,20:31:54 | INFO | Rank 0 |   logs: /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/
+2024-05-29,20:31:54 | INFO | Rank 0 |   lr: 3e-06
+2024-05-29,20:31:54 | INFO | Rank 0 |   mask_ratio: 0
+2024-05-29,20:31:54 | INFO | Rank 0 |   max_epochs: 20
+2024-05-29,20:31:54 | INFO | Rank 0 |   max_steps: 19560
+2024-05-29,20:31:54 | INFO | Rank 0 |   name: li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu
+2024-05-29,20:31:54 | INFO | Rank 0 |   num_workers: 4
+2024-05-29,20:31:54 | INFO | Rank 0 |   precision: amp
+2024-05-29,20:31:54 | INFO | Rank 0 |   rank: 0
+2024-05-29,20:31:54 | INFO | Rank 0 |   report_training_batch_acc: True
+2024-05-29,20:31:54 | INFO | Rank 0 |   reset_data_offset: True
+2024-05-29,20:31:54 | INFO | Rank 0 |   reset_optimizer: True
+2024-05-29,20:31:54 | INFO | Rank 0 |   resume: /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt
+2024-05-29,20:31:54 | INFO | Rank 0 |   save_epoch_frequency: 1
+2024-05-29,20:31:54 | INFO | Rank 0 |   save_step_frequency: 999999
+2024-05-29,20:31:54 | INFO | Rank 0 |   seed: 123
+2024-05-29,20:31:54 | INFO | Rank 0 |   skip_aggregate: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   skip_scheduler: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   teacher_model_name: None
+2024-05-29,20:31:54 | INFO | Rank 0 |   text_model: RoBERTa-wwm-ext-large-chinese
+2024-05-29,20:31:54 | INFO | Rank 0 |   train_data: /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/datasets/Multimodal_Retrieval/lmdb/train
+2024-05-29,20:31:54 | INFO | Rank 0 |   use_augment: True
+2024-05-29,20:31:54 | INFO | Rank 0 |   use_bn_sync: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   use_flash_attention: False
+2024-05-29,20:31:54 | INFO | Rank 0 |   val_data: /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/datasets/Multimodal_Retrieval/lmdb/valid
+2024-05-29,20:31:54 | INFO | Rank 0 |   valid_batch_size: 64
+2024-05-29,20:31:54 | INFO | Rank 0 |   valid_epoch_interval: 1
+2024-05-29,20:31:54 | INFO | Rank 0 |   valid_num_workers: 1
+2024-05-29,20:31:54 | INFO | Rank 0 |   valid_step_interval: 150
+2024-05-29,20:31:54 | INFO | Rank 0 |   vision_model: ViT-H-14
+2024-05-29,20:31:54 | INFO | Rank 0 |   warmup: 100
+2024-05-29,20:31:54 | INFO | Rank 0 |   wd: 0.001
+2024-05-29,20:31:54 | INFO | Rank 0 |   world_size: 4
+2024-05-29,20:31:54 | INFO | Rank 0 | Use GPU: 0 for training
+2024-05-29,20:31:54 | INFO | Rank 0 | => begin to load checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt'
+2024-05-29,20:32:00 | INFO | Rank 3 | => loaded checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt' (epoch 7 @ 0 steps)
+2024-05-29,20:32:00 | INFO | Rank 3 | Start epoch 1
+2024-05-29,20:32:00 | INFO | Rank 2 | => loaded checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt' (epoch 7 @ 0 steps)
+2024-05-29,20:32:00 | INFO | Rank 2 | Start epoch 1
+2024-05-29,20:32:00 | INFO | Rank 1 | => loaded checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt' (epoch 7 @ 0 steps)
+2024-05-29,20:32:00 | INFO | Rank 1 | Start epoch 1
+2024-05-29,20:32:01 | INFO | Rank 0 | => loaded checkpoint '/mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/pretrained_weights/clip_cn_vit-h-14.pt' (epoch 7 @ 0 steps)
+2024-05-29,20:32:06 | INFO | Rank 2 | Reducer buckets have been rebuilt in this iteration.
+2024-05-29,20:32:06 | INFO | Rank 1 | Reducer buckets have been rebuilt in this iteration.
+2024-05-29,20:32:06 | INFO | Rank 0 | Reducer buckets have been rebuilt in this iteration.
+2024-05-29,20:32:06 | INFO | Rank 3 | Reducer buckets have been rebuilt in this iteration.
+2024-05-29,20:32:17 | INFO | Rank 0 | Global Steps: 10/19560 | Train Epoch: 1 [2560/250368 (1%)] | Loss: 1.159537 | Image2Text Acc: 72.27 | Text2Image Acc: 73.44 | Data Time: 0.035s | Batch Time: 1.200s | LR: 0.000000 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:32:29 | INFO | Rank 0 | Global Steps: 20/19560 | Train Epoch: 1 [5120/250368 (2%)] | Loss: 0.973787 | Image2Text Acc: 71.48 | Text2Image Acc: 76.17 | Data Time: 0.030s | Batch Time: 1.194s | LR: 0.000001 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:32:41 | INFO | Rank 0 | Global Steps: 30/19560 | Train Epoch: 1 [7680/250368 (3%)] | Loss: 0.828123 | Image2Text Acc: 80.86 | Text2Image Acc: 81.64 | Data Time: 0.032s | Batch Time: 1.202s | LR: 0.000001 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:32:53 | INFO | Rank 0 | Global Steps: 40/19560 | Train Epoch: 1 [10240/250368 (4%)] | Loss: 1.012378 | Image2Text Acc: 76.17 | Text2Image Acc: 75.39 | Data Time: 0.025s | Batch Time: 1.195s | LR: 0.000001 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:33:05 | INFO | Rank 0 | Global Steps: 50/19560 | Train Epoch: 1 [12800/250368 (5%)] | Loss: 0.825874 | Image2Text Acc: 77.34 | Text2Image Acc: 79.69 | Data Time: 0.032s | Batch Time: 1.199s | LR: 0.000002 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:33:17 | INFO | Rank 0 | Global Steps: 60/19560 | Train Epoch: 1 [15360/250368 (6%)] | Loss: 0.659649 | Image2Text Acc: 82.03 | Text2Image Acc: 84.38 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000002 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:33:29 | INFO | Rank 0 | Global Steps: 70/19560 | Train Epoch: 1 [17920/250368 (7%)] | Loss: 0.661976 | Image2Text Acc: 80.86 | Text2Image Acc: 83.59 | Data Time: 0.034s | Batch Time: 1.199s | LR: 0.000002 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:33:41 | INFO | Rank 0 | Global Steps: 80/19560 | Train Epoch: 1 [20480/250368 (8%)] | Loss: 0.723403 | Image2Text Acc: 80.47 | Text2Image Acc: 82.42 | Data Time: 0.024s | Batch Time: 1.194s | LR: 0.000002 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:33:53 | INFO | Rank 0 | Global Steps: 90/19560 | Train Epoch: 1 [23040/250368 (9%)] | Loss: 0.772267 | Image2Text Acc: 79.69 | Text2Image Acc: 78.12 | Data Time: 0.035s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:34:05 | INFO | Rank 0 | Global Steps: 100/19560 | Train Epoch: 1 [25600/250368 (10%)] | Loss: 0.554252 | Image2Text Acc: 84.77 | Text2Image Acc: 83.59 | Data Time: 0.025s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:34:17 | INFO | Rank 0 | Global Steps: 110/19560 | Train Epoch: 1 [28160/250368 (11%)] | Loss: 0.849216 | Image2Text Acc: 76.95 | Text2Image Acc: 78.12 | Data Time: 0.032s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:34:29 | INFO | Rank 0 | Global Steps: 120/19560 | Train Epoch: 1 [30720/250368 (12%)] | Loss: 0.647261 | Image2Text Acc: 78.12 | Text2Image Acc: 80.86 | Data Time: 0.025s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:34:41 | INFO | Rank 0 | Global Steps: 130/19560 | Train Epoch: 1 [33280/250368 (13%)] | Loss: 0.806134 | Image2Text Acc: 78.12 | Text2Image Acc: 78.12 | Data Time: 0.033s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:34:53 | INFO | Rank 0 | Global Steps: 140/19560 | Train Epoch: 1 [35840/250368 (14%)] | Loss: 0.708793 | Image2Text Acc: 80.47 | Text2Image Acc: 78.52 | Data Time: 0.023s | Batch Time: 1.193s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:35:05 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 150 steps)...
+2024-05-29,20:35:05 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 150 steps)...
+2024-05-29,20:35:05 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 150 steps)...
+2024-05-29,20:35:05 | INFO | Rank 0 | Global Steps: 150/19560 | Train Epoch: 1 [38400/250368 (15%)] | Loss: 0.772828 | Image2Text Acc: 78.52 | Text2Image Acc: 79.30 | Data Time: 0.032s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:35:05 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 150 steps)...
+2024-05-29,20:37:30 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,20:37:30 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,20:37:30 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,20:37:31 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,20:38:00 | INFO | Rank 2 | Validation Result (epoch 1 @ 150 steps) | Valid Loss: 0.208375 | Image2Text Acc: 93.76 | Text2Image Acc: 93.32 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:38:00 | INFO | Rank 3 | Validation Result (epoch 1 @ 150 steps) | Valid Loss: 0.208375 | Image2Text Acc: 93.76 | Text2Image Acc: 93.32 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:38:00 | INFO | Rank 1 | Validation Result (epoch 1 @ 150 steps) | Valid Loss: 0.208375 | Image2Text Acc: 93.76 | Text2Image Acc: 93.32 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:38:00 | INFO | Rank 0 | Validation Result (epoch 1 @ 150 steps) | Valid Loss: 0.208375 | Image2Text Acc: 93.76 | Text2Image Acc: 93.32 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:38:13 | INFO | Rank 0 | Global Steps: 160/19560 | Train Epoch: 1 [40960/250368 (16%)] | Loss: 0.580563 | Image2Text Acc: 84.77 | Text2Image Acc: 82.42 | Data Time: 0.027s | Batch Time: 1.193s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:38:25 | INFO | Rank 0 | Global Steps: 170/19560 | Train Epoch: 1 [43520/250368 (17%)] | Loss: 0.527953 | Image2Text Acc: 85.55 | Text2Image Acc: 84.77 | Data Time: 0.035s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:38:37 | INFO | Rank 0 | Global Steps: 180/19560 | Train Epoch: 1 [46080/250368 (18%)] | Loss: 0.766323 | Image2Text Acc: 78.52 | Text2Image Acc: 80.86 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:38:49 | INFO | Rank 0 | Global Steps: 190/19560 | Train Epoch: 1 [48640/250368 (19%)] | Loss: 0.647316 | Image2Text Acc: 82.42 | Text2Image Acc: 83.59 | Data Time: 0.035s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:39:01 | INFO | Rank 0 | Global Steps: 200/19560 | Train Epoch: 1 [51200/250368 (20%)] | Loss: 0.741868 | Image2Text Acc: 77.73 | Text2Image Acc: 79.69 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:39:13 | INFO | Rank 0 | Global Steps: 210/19560 | Train Epoch: 1 [53760/250368 (21%)] | Loss: 0.732650 | Image2Text Acc: 80.47 | Text2Image Acc: 77.73 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:39:25 | INFO | Rank 0 | Global Steps: 220/19560 | Train Epoch: 1 [56320/250368 (22%)] | Loss: 0.627676 | Image2Text Acc: 82.42 | Text2Image Acc: 82.03 | Data Time: 0.029s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:39:37 | INFO | Rank 0 | Global Steps: 230/19560 | Train Epoch: 1 [58880/250368 (24%)] | Loss: 0.672361 | Image2Text Acc: 81.25 | Text2Image Acc: 78.91 | Data Time: 0.034s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:39:49 | INFO | Rank 0 | Global Steps: 240/19560 | Train Epoch: 1 [61440/250368 (25%)] | Loss: 0.695120 | Image2Text Acc: 80.86 | Text2Image Acc: 80.86 | Data Time: 0.030s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:40:01 | INFO | Rank 0 | Global Steps: 250/19560 | Train Epoch: 1 [64000/250368 (26%)] | Loss: 0.566046 | Image2Text Acc: 80.47 | Text2Image Acc: 83.98 | Data Time: 0.033s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:40:13 | INFO | Rank 0 | Global Steps: 260/19560 | Train Epoch: 1 [66560/250368 (27%)] | Loss: 0.666174 | Image2Text Acc: 84.38 | Text2Image Acc: 83.59 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:40:25 | INFO | Rank 0 | Global Steps: 270/19560 | Train Epoch: 1 [69120/250368 (28%)] | Loss: 0.539453 | Image2Text Acc: 85.16 | Text2Image Acc: 83.20 | Data Time: 0.026s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:40:37 | INFO | Rank 0 | Global Steps: 280/19560 | Train Epoch: 1 [71680/250368 (29%)] | Loss: 0.624015 | Image2Text Acc: 83.98 | Text2Image Acc: 84.77 | Data Time: 0.029s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:40:49 | INFO | Rank 0 | Global Steps: 290/19560 | Train Epoch: 1 [74240/250368 (30%)] | Loss: 0.686310 | Image2Text Acc: 80.86 | Text2Image Acc: 83.20 | Data Time: 0.029s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:41:01 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 300 steps)...
+2024-05-29,20:41:01 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 300 steps)...
+2024-05-29,20:41:01 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 300 steps)...
+2024-05-29,20:41:01 | INFO | Rank 0 | Global Steps: 300/19560 | Train Epoch: 1 [76800/250368 (31%)] | Loss: 0.780105 | Image2Text Acc: 80.08 | Text2Image Acc: 81.25 | Data Time: 0.026s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:41:01 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 300 steps)...
+2024-05-29,20:43:25 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,20:43:25 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,20:43:26 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,20:43:27 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,20:43:56 | INFO | Rank 2 | Validation Result (epoch 1 @ 300 steps) | Valid Loss: 0.196725 | Image2Text Acc: 94.11 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:43:56 | INFO | Rank 3 | Validation Result (epoch 1 @ 300 steps) | Valid Loss: 0.196725 | Image2Text Acc: 94.11 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:43:56 | INFO | Rank 1 | Validation Result (epoch 1 @ 300 steps) | Valid Loss: 0.196725 | Image2Text Acc: 94.11 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:43:56 | INFO | Rank 0 | Validation Result (epoch 1 @ 300 steps) | Valid Loss: 0.196725 | Image2Text Acc: 94.11 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:44:08 | INFO | Rank 0 | Global Steps: 310/19560 | Train Epoch: 1 [79360/250368 (32%)] | Loss: 0.677796 | Image2Text Acc: 79.30 | Text2Image Acc: 81.64 | Data Time: 0.033s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:44:20 | INFO | Rank 0 | Global Steps: 320/19560 | Train Epoch: 1 [81920/250368 (33%)] | Loss: 0.662281 | Image2Text Acc: 78.12 | Text2Image Acc: 78.12 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:44:32 | INFO | Rank 0 | Global Steps: 330/19560 | Train Epoch: 1 [84480/250368 (34%)] | Loss: 0.706045 | Image2Text Acc: 80.86 | Text2Image Acc: 78.52 | Data Time: 0.037s | Batch Time: 1.208s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:44:44 | INFO | Rank 0 | Global Steps: 340/19560 | Train Epoch: 1 [87040/250368 (35%)] | Loss: 0.739089 | Image2Text Acc: 82.03 | Text2Image Acc: 81.64 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:44:56 | INFO | Rank 0 | Global Steps: 350/19560 | Train Epoch: 1 [89600/250368 (36%)] | Loss: 0.712859 | Image2Text Acc: 81.64 | Text2Image Acc: 80.47 | Data Time: 0.033s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:45:08 | INFO | Rank 0 | Global Steps: 360/19560 | Train Epoch: 1 [92160/250368 (37%)] | Loss: 0.861978 | Image2Text Acc: 75.39 | Text2Image Acc: 75.78 | Data Time: 0.027s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:45:20 | INFO | Rank 0 | Global Steps: 370/19560 | Train Epoch: 1 [94720/250368 (38%)] | Loss: 0.561657 | Image2Text Acc: 85.55 | Text2Image Acc: 82.81 | Data Time: 0.034s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:45:32 | INFO | Rank 0 | Global Steps: 380/19560 | Train Epoch: 1 [97280/250368 (39%)] | Loss: 0.681141 | Image2Text Acc: 81.25 | Text2Image Acc: 79.69 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:45:44 | INFO | Rank 0 | Global Steps: 390/19560 | Train Epoch: 1 [99840/250368 (40%)] | Loss: 0.621939 | Image2Text Acc: 81.64 | Text2Image Acc: 80.47 | Data Time: 0.032s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:45:56 | INFO | Rank 0 | Global Steps: 400/19560 | Train Epoch: 1 [102400/250368 (41%)] | Loss: 0.573017 | Image2Text Acc: 83.98 | Text2Image Acc: 81.25 | Data Time: 0.027s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:46:08 | INFO | Rank 0 | Global Steps: 410/19560 | Train Epoch: 1 [104960/250368 (42%)] | Loss: 0.654356 | Image2Text Acc: 83.59 | Text2Image Acc: 83.59 | Data Time: 0.033s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:46:20 | INFO | Rank 0 | Global Steps: 420/19560 | Train Epoch: 1 [107520/250368 (43%)] | Loss: 0.722128 | Image2Text Acc: 79.30 | Text2Image Acc: 81.25 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:46:32 | INFO | Rank 0 | Global Steps: 430/19560 | Train Epoch: 1 [110080/250368 (44%)] | Loss: 0.586085 | Image2Text Acc: 81.64 | Text2Image Acc: 81.25 | Data Time: 0.034s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:46:44 | INFO | Rank 0 | Global Steps: 440/19560 | Train Epoch: 1 [112640/250368 (45%)] | Loss: 0.774326 | Image2Text Acc: 76.17 | Text2Image Acc: 78.12 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:46:56 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 450 steps)...
+2024-05-29,20:46:56 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 450 steps)...
+2024-05-29,20:46:56 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 450 steps)...
+2024-05-29,20:46:56 | INFO | Rank 0 | Global Steps: 450/19560 | Train Epoch: 1 [115200/250368 (46%)] | Loss: 0.548163 | Image2Text Acc: 82.42 | Text2Image Acc: 84.77 | Data Time: 0.034s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:46:56 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 450 steps)...
+2024-05-29,20:49:21 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,20:49:21 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,20:49:22 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,20:49:22 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,20:49:52 | INFO | Rank 2 | Validation Result (epoch 1 @ 450 steps) | Valid Loss: 0.193134 | Image2Text Acc: 94.14 | Text2Image Acc: 93.63 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:49:52 | INFO | Rank 3 | Validation Result (epoch 1 @ 450 steps) | Valid Loss: 0.193134 | Image2Text Acc: 94.14 | Text2Image Acc: 93.63 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:49:52 | INFO | Rank 1 | Validation Result (epoch 1 @ 450 steps) | Valid Loss: 0.193134 | Image2Text Acc: 94.14 | Text2Image Acc: 93.63 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:49:52 | INFO | Rank 0 | Validation Result (epoch 1 @ 450 steps) | Valid Loss: 0.193134 | Image2Text Acc: 94.14 | Text2Image Acc: 93.63 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:50:04 | INFO | Rank 0 | Global Steps: 460/19560 | Train Epoch: 1 [117760/250368 (47%)] | Loss: 0.592043 | Image2Text Acc: 82.42 | Text2Image Acc: 82.42 | Data Time: 0.026s | Batch Time: 1.193s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:50:16 | INFO | Rank 0 | Global Steps: 470/19560 | Train Epoch: 1 [120320/250368 (48%)] | Loss: 0.575999 | Image2Text Acc: 83.59 | Text2Image Acc: 81.25 | Data Time: 0.036s | Batch Time: 1.206s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:50:28 | INFO | Rank 0 | Global Steps: 480/19560 | Train Epoch: 1 [122880/250368 (49%)] | Loss: 0.587557 | Image2Text Acc: 83.59 | Text2Image Acc: 83.20 | Data Time: 0.032s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:50:40 | INFO | Rank 0 | Global Steps: 490/19560 | Train Epoch: 1 [125440/250368 (50%)] | Loss: 0.660970 | Image2Text Acc: 80.86 | Text2Image Acc: 82.03 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:50:52 | INFO | Rank 0 | Global Steps: 500/19560 | Train Epoch: 1 [128000/250368 (51%)] | Loss: 0.648228 | Image2Text Acc: 80.47 | Text2Image Acc: 82.81 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:51:04 | INFO | Rank 0 | Global Steps: 510/19560 | Train Epoch: 1 [130560/250368 (52%)] | Loss: 0.565487 | Image2Text Acc: 85.16 | Text2Image Acc: 83.98 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:51:16 | INFO | Rank 0 | Global Steps: 520/19560 | Train Epoch: 1 [133120/250368 (53%)] | Loss: 0.576755 | Image2Text Acc: 83.98 | Text2Image Acc: 83.20 | Data Time: 0.032s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:51:28 | INFO | Rank 0 | Global Steps: 530/19560 | Train Epoch: 1 [135680/250368 (54%)] | Loss: 0.505083 | Image2Text Acc: 85.55 | Text2Image Acc: 85.16 | Data Time: 0.032s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:51:40 | INFO | Rank 0 | Global Steps: 540/19560 | Train Epoch: 1 [138240/250368 (55%)] | Loss: 0.548912 | Image2Text Acc: 82.81 | Text2Image Acc: 82.03 | Data Time: 0.026s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:51:52 | INFO | Rank 0 | Global Steps: 550/19560 | Train Epoch: 1 [140800/250368 (56%)] | Loss: 0.551679 | Image2Text Acc: 84.38 | Text2Image Acc: 85.16 | Data Time: 0.027s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:52:04 | INFO | Rank 0 | Global Steps: 560/19560 | Train Epoch: 1 [143360/250368 (57%)] | Loss: 0.529664 | Image2Text Acc: 84.77 | Text2Image Acc: 85.16 | Data Time: 0.032s | Batch Time: 1.220s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:52:16 | INFO | Rank 0 | Global Steps: 570/19560 | Train Epoch: 1 [145920/250368 (58%)] | Loss: 0.603193 | Image2Text Acc: 83.98 | Text2Image Acc: 83.20 | Data Time: 0.032s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:52:28 | INFO | Rank 0 | Global Steps: 580/19560 | Train Epoch: 1 [148480/250368 (59%)] | Loss: 0.744077 | Image2Text Acc: 78.52 | Text2Image Acc: 80.86 | Data Time: 0.033s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:52:40 | INFO | Rank 0 | Global Steps: 590/19560 | Train Epoch: 1 [151040/250368 (60%)] | Loss: 0.833065 | Image2Text Acc: 77.73 | Text2Image Acc: 76.95 | Data Time: 0.027s | Batch Time: 1.114s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:52:52 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 600 steps)...
+2024-05-29,20:52:52 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 600 steps)...
+2024-05-29,20:52:52 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 600 steps)...
+2024-05-29,20:52:52 | INFO | Rank 0 | Global Steps: 600/19560 | Train Epoch: 1 [153600/250368 (61%)] | Loss: 0.677172 | Image2Text Acc: 78.12 | Text2Image Acc: 80.08 | Data Time: 0.032s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:52:52 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 600 steps)...
+2024-05-29,20:55:16 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,20:55:17 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,20:55:17 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,20:55:17 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,20:55:47 | INFO | Rank 2 | Validation Result (epoch 1 @ 600 steps) | Valid Loss: 0.191900 | Image2Text Acc: 94.23 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:55:47 | INFO | Rank 3 | Validation Result (epoch 1 @ 600 steps) | Valid Loss: 0.191900 | Image2Text Acc: 94.23 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:55:47 | INFO | Rank 1 | Validation Result (epoch 1 @ 600 steps) | Valid Loss: 0.191900 | Image2Text Acc: 94.23 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:55:47 | INFO | Rank 0 | Validation Result (epoch 1 @ 600 steps) | Valid Loss: 0.191900 | Image2Text Acc: 94.23 | Text2Image Acc: 93.61 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,20:55:59 | INFO | Rank 0 | Global Steps: 610/19560 | Train Epoch: 1 [156160/250368 (62%)] | Loss: 0.527804 | Image2Text Acc: 84.77 | Text2Image Acc: 84.38 | Data Time: 0.033s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:56:11 | INFO | Rank 0 | Global Steps: 620/19560 | Train Epoch: 1 [158720/250368 (63%)] | Loss: 0.601957 | Image2Text Acc: 82.03 | Text2Image Acc: 83.20 | Data Time: 0.024s | Batch Time: 1.190s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:56:23 | INFO | Rank 0 | Global Steps: 630/19560 | Train Epoch: 1 [161280/250368 (64%)] | Loss: 0.504095 | Image2Text Acc: 86.33 | Text2Image Acc: 86.72 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:56:35 | INFO | Rank 0 | Global Steps: 640/19560 | Train Epoch: 1 [163840/250368 (65%)] | Loss: 0.557941 | Image2Text Acc: 84.77 | Text2Image Acc: 85.16 | Data Time: 0.025s | Batch Time: 1.224s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:56:47 | INFO | Rank 0 | Global Steps: 650/19560 | Train Epoch: 1 [166400/250368 (66%)] | Loss: 0.538919 | Image2Text Acc: 85.55 | Text2Image Acc: 85.55 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:56:59 | INFO | Rank 0 | Global Steps: 660/19560 | Train Epoch: 1 [168960/250368 (67%)] | Loss: 0.584363 | Image2Text Acc: 83.59 | Text2Image Acc: 83.59 | Data Time: 0.031s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:57:11 | INFO | Rank 0 | Global Steps: 670/19560 | Train Epoch: 1 [171520/250368 (69%)] | Loss: 0.577231 | Image2Text Acc: 82.42 | Text2Image Acc: 81.25 | Data Time: 0.033s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:57:23 | INFO | Rank 0 | Global Steps: 680/19560 | Train Epoch: 1 [174080/250368 (70%)] | Loss: 0.779659 | Image2Text Acc: 83.20 | Text2Image Acc: 83.20 | Data Time: 0.026s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:57:35 | INFO | Rank 0 | Global Steps: 690/19560 | Train Epoch: 1 [176640/250368 (71%)] | Loss: 0.523352 | Image2Text Acc: 82.42 | Text2Image Acc: 85.16 | Data Time: 0.032s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:57:47 | INFO | Rank 0 | Global Steps: 700/19560 | Train Epoch: 1 [179200/250368 (72%)] | Loss: 0.575962 | Image2Text Acc: 82.03 | Text2Image Acc: 83.59 | Data Time: 0.032s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:57:59 | INFO | Rank 0 | Global Steps: 710/19560 | Train Epoch: 1 [181760/250368 (73%)] | Loss: 0.664458 | Image2Text Acc: 80.86 | Text2Image Acc: 81.25 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:58:11 | INFO | Rank 0 | Global Steps: 720/19560 | Train Epoch: 1 [184320/250368 (74%)] | Loss: 0.581823 | Image2Text Acc: 84.38 | Text2Image Acc: 83.98 | Data Time: 0.025s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:58:23 | INFO | Rank 0 | Global Steps: 730/19560 | Train Epoch: 1 [186880/250368 (75%)] | Loss: 0.741121 | Image2Text Acc: 81.64 | Text2Image Acc: 78.91 | Data Time: 0.032s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:58:35 | INFO | Rank 0 | Global Steps: 740/19560 | Train Epoch: 1 [189440/250368 (76%)] | Loss: 0.668178 | Image2Text Acc: 79.69 | Text2Image Acc: 82.03 | Data Time: 0.033s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:58:47 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 750 steps)...
+2024-05-29,20:58:47 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 750 steps)...
+2024-05-29,20:58:47 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 750 steps)...
+2024-05-29,20:58:47 | INFO | Rank 0 | Global Steps: 750/19560 | Train Epoch: 1 [192000/250368 (77%)] | Loss: 0.465628 | Image2Text Acc: 85.55 | Text2Image Acc: 87.50 | Data Time: 0.027s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,20:58:47 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 750 steps)...
+2024-05-29,21:01:12 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:01:12 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:01:12 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:01:12 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:01:42 | INFO | Rank 2 | Validation Result (epoch 1 @ 750 steps) | Valid Loss: 0.188086 | Image2Text Acc: 94.36 | Text2Image Acc: 93.77 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:01:42 | INFO | Rank 3 | Validation Result (epoch 1 @ 750 steps) | Valid Loss: 0.188086 | Image2Text Acc: 94.36 | Text2Image Acc: 93.77 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:01:42 | INFO | Rank 1 | Validation Result (epoch 1 @ 750 steps) | Valid Loss: 0.188086 | Image2Text Acc: 94.36 | Text2Image Acc: 93.77 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:01:42 | INFO | Rank 0 | Validation Result (epoch 1 @ 750 steps) | Valid Loss: 0.188086 | Image2Text Acc: 94.36 | Text2Image Acc: 93.77 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:01:54 | INFO | Rank 0 | Global Steps: 760/19560 | Train Epoch: 1 [194560/250368 (78%)] | Loss: 0.614558 | Image2Text Acc: 81.64 | Text2Image Acc: 83.98 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:02:06 | INFO | Rank 0 | Global Steps: 770/19560 | Train Epoch: 1 [197120/250368 (79%)] | Loss: 0.727188 | Image2Text Acc: 78.12 | Text2Image Acc: 78.12 | Data Time: 0.028s | Batch Time: 1.193s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:02:18 | INFO | Rank 0 | Global Steps: 780/19560 | Train Epoch: 1 [199680/250368 (80%)] | Loss: 0.607321 | Image2Text Acc: 83.59 | Text2Image Acc: 84.38 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:02:30 | INFO | Rank 0 | Global Steps: 790/19560 | Train Epoch: 1 [202240/250368 (81%)] | Loss: 0.603697 | Image2Text Acc: 85.16 | Text2Image Acc: 84.38 | Data Time: 0.033s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:02:42 | INFO | Rank 0 | Global Steps: 800/19560 | Train Epoch: 1 [204800/250368 (82%)] | Loss: 0.425087 | Image2Text Acc: 87.11 | Text2Image Acc: 87.89 | Data Time: 0.026s | Batch Time: 1.192s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:02:54 | INFO | Rank 0 | Global Steps: 810/19560 | Train Epoch: 1 [207360/250368 (83%)] | Loss: 0.602827 | Image2Text Acc: 84.38 | Text2Image Acc: 83.20 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:03:05 | INFO | Rank 0 | Global Steps: 820/19560 | Train Epoch: 1 [209920/250368 (84%)] | Loss: 0.522102 | Image2Text Acc: 88.28 | Text2Image Acc: 83.98 | Data Time: 0.025s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:03:18 | INFO | Rank 0 | Global Steps: 830/19560 | Train Epoch: 1 [212480/250368 (85%)] | Loss: 0.513206 | Image2Text Acc: 83.98 | Text2Image Acc: 86.72 | Data Time: 0.034s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:03:30 | INFO | Rank 0 | Global Steps: 840/19560 | Train Epoch: 1 [215040/250368 (86%)] | Loss: 0.545015 | Image2Text Acc: 82.42 | Text2Image Acc: 83.98 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:03:42 | INFO | Rank 0 | Global Steps: 850/19560 | Train Epoch: 1 [217600/250368 (87%)] | Loss: 0.484891 | Image2Text Acc: 85.55 | Text2Image Acc: 85.55 | Data Time: 0.033s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:03:53 | INFO | Rank 0 | Global Steps: 860/19560 | Train Epoch: 1 [220160/250368 (88%)] | Loss: 0.658304 | Image2Text Acc: 83.59 | Text2Image Acc: 81.64 | Data Time: 0.032s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:04:06 | INFO | Rank 0 | Global Steps: 870/19560 | Train Epoch: 1 [222720/250368 (89%)] | Loss: 0.617548 | Image2Text Acc: 83.98 | Text2Image Acc: 84.77 | Data Time: 0.027s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:04:18 | INFO | Rank 0 | Global Steps: 880/19560 | Train Epoch: 1 [225280/250368 (90%)] | Loss: 0.490703 | Image2Text Acc: 89.06 | Text2Image Acc: 85.55 | Data Time: 0.026s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:04:30 | INFO | Rank 0 | Global Steps: 890/19560 | Train Epoch: 1 [227840/250368 (91%)] | Loss: 0.520198 | Image2Text Acc: 82.81 | Text2Image Acc: 84.77 | Data Time: 0.034s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:04:41 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 900 steps)...
+2024-05-29,21:04:41 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 900 steps)...
+2024-05-29,21:04:41 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 900 steps)...
+2024-05-29,21:04:42 | INFO | Rank 0 | Global Steps: 900/19560 | Train Epoch: 1 [230400/250368 (92%)] | Loss: 0.559168 | Image2Text Acc: 83.98 | Text2Image Acc: 83.20 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:04:42 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 900 steps)...
+2024-05-29,21:07:06 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:07:06 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:07:06 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:07:07 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:07:37 | INFO | Rank 2 | Validation Result (epoch 1 @ 900 steps) | Valid Loss: 0.184460 | Image2Text Acc: 94.40 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:07:37 | INFO | Rank 3 | Validation Result (epoch 1 @ 900 steps) | Valid Loss: 0.184460 | Image2Text Acc: 94.40 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:07:37 | INFO | Rank 1 | Validation Result (epoch 1 @ 900 steps) | Valid Loss: 0.184460 | Image2Text Acc: 94.40 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:07:37 | INFO | Rank 0 | Validation Result (epoch 1 @ 900 steps) | Valid Loss: 0.184460 | Image2Text Acc: 94.40 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:07:49 | INFO | Rank 0 | Global Steps: 910/19560 | Train Epoch: 1 [232960/250368 (93%)] | Loss: 0.654772 | Image2Text Acc: 78.91 | Text2Image Acc: 80.47 | Data Time: 0.033s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:08:01 | INFO | Rank 0 | Global Steps: 920/19560 | Train Epoch: 1 [235520/250368 (94%)] | Loss: 0.585447 | Image2Text Acc: 81.64 | Text2Image Acc: 80.86 | Data Time: 0.026s | Batch Time: 1.192s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:08:13 | INFO | Rank 0 | Global Steps: 930/19560 | Train Epoch: 1 [238080/250368 (95%)] | Loss: 0.487885 | Image2Text Acc: 86.72 | Text2Image Acc: 83.59 | Data Time: 0.034s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:08:25 | INFO | Rank 0 | Global Steps: 940/19560 | Train Epoch: 1 [240640/250368 (96%)] | Loss: 0.630333 | Image2Text Acc: 82.81 | Text2Image Acc: 77.34 | Data Time: 0.026s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:08:37 | INFO | Rank 0 | Global Steps: 950/19560 | Train Epoch: 1 [243200/250368 (97%)] | Loss: 0.588859 | Image2Text Acc: 83.20 | Text2Image Acc: 83.20 | Data Time: 0.033s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:08:49 | INFO | Rank 0 | Global Steps: 960/19560 | Train Epoch: 1 [245760/250368 (98%)] | Loss: 0.550251 | Image2Text Acc: 82.81 | Text2Image Acc: 84.38 | Data Time: 0.026s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:09:01 | INFO | Rank 0 | Global Steps: 970/19560 | Train Epoch: 1 [248320/250368 (99%)] | Loss: 0.603447 | Image2Text Acc: 83.20 | Text2Image Acc: 81.64 | Data Time: 0.027s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:09:10 | INFO | Rank 3 | Begin to eval on validation set (epoch 1 @ 978 steps)...
+2024-05-29,21:09:11 | INFO | Rank 2 | Begin to eval on validation set (epoch 1 @ 978 steps)...
+2024-05-29,21:09:11 | INFO | Rank 1 | Begin to eval on validation set (epoch 1 @ 978 steps)...
+2024-05-29,21:09:11 | INFO | Rank 0 | Begin to eval on validation set (epoch 1 @ 978 steps)...
+2024-05-29,21:11:35 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:11:35 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:11:36 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:11:36 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:12:06 | INFO | Rank 2 | Validation Result (epoch 1 @ 978 steps) | Valid Loss: 0.182981 | Image2Text Acc: 94.51 | Text2Image Acc: 93.87 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:12:06 | INFO | Rank 3 | Validation Result (epoch 1 @ 978 steps) | Valid Loss: 0.182981 | Image2Text Acc: 94.51 | Text2Image Acc: 93.87 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:12:06 | INFO | Rank 1 | Validation Result (epoch 1 @ 978 steps) | Valid Loss: 0.182981 | Image2Text Acc: 94.51 | Text2Image Acc: 93.87 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:12:06 | INFO | Rank 0 | Validation Result (epoch 1 @ 978 steps) | Valid Loss: 0.182981 | Image2Text Acc: 94.51 | Text2Image Acc: 93.87 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:12:06 | INFO | Rank 2 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:12:06 | INFO | Rank 1 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:12:06 | INFO | Rank 3 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:12:06 | INFO | Rank 0 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:12:07 | INFO | Rank 2 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:12:07 | INFO | Rank 1 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:12:07 | INFO | Rank 3 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:12:07 | INFO | Rank 0 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:12:07 | INFO | Rank 2 | Start epoch 2
+2024-05-29,21:12:07 | INFO | Rank 1 | Start epoch 2
+2024-05-29,21:12:07 | INFO | Rank 3 | Start epoch 2
+2024-05-29,21:12:46 | INFO | Rank 0 | Saved checkpoint /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints/epoch1.pt (epoch 1 @ 978 steps) (writing took 39.49886202812195 seconds)
+2024-05-29,21:13:27 | INFO | Rank 0 | Saved checkpoint /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints/epoch_latest.pt (epoch 1 @ 978 steps) (writing took 40.61271810531616 seconds)
+2024-05-29,21:13:30 | INFO | Rank 0 | Global Steps: 980/19560 | Train Epoch: 2 [512/250368 (0%)] | Loss: 0.537645 | Image2Text Acc: 83.20 | Text2Image Acc: 83.59 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:13:42 | INFO | Rank 0 | Global Steps: 990/19560 | Train Epoch: 2 [3072/250368 (1%)] | Loss: 0.474909 | Image2Text Acc: 85.55 | Text2Image Acc: 85.55 | Data Time: 0.033s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:13:54 | INFO | Rank 0 | Global Steps: 1000/19560 | Train Epoch: 2 [5632/250368 (2%)] | Loss: 0.328905 | Image2Text Acc: 87.89 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:14:06 | INFO | Rank 0 | Global Steps: 1010/19560 | Train Epoch: 2 [8192/250368 (3%)] | Loss: 0.462115 | Image2Text Acc: 83.20 | Text2Image Acc: 84.77 | Data Time: 0.036s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:14:18 | INFO | Rank 0 | Global Steps: 1020/19560 | Train Epoch: 2 [10752/250368 (4%)] | Loss: 0.539745 | Image2Text Acc: 84.38 | Text2Image Acc: 81.64 | Data Time: 0.027s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:14:30 | INFO | Rank 0 | Global Steps: 1030/19560 | Train Epoch: 2 [13312/250368 (5%)] | Loss: 0.413743 | Image2Text Acc: 85.55 | Text2Image Acc: 85.94 | Data Time: 0.037s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:14:42 | INFO | Rank 0 | Global Steps: 1040/19560 | Train Epoch: 2 [15872/250368 (6%)] | Loss: 0.419655 | Image2Text Acc: 86.72 | Text2Image Acc: 88.67 | Data Time: 0.026s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:14:54 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1050 steps)...
+2024-05-29,21:14:54 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1050 steps)...
+2024-05-29,21:14:54 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1050 steps)...
+2024-05-29,21:14:54 | INFO | Rank 0 | Global Steps: 1050/19560 | Train Epoch: 2 [18432/250368 (7%)] | Loss: 0.433178 | Image2Text Acc: 85.55 | Text2Image Acc: 86.33 | Data Time: 0.033s | Batch Time: 1.211s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:14:54 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1050 steps)...
+2024-05-29,21:17:19 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:17:19 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:17:19 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:17:20 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:17:49 | INFO | Rank 2 | Validation Result (epoch 2 @ 1050 steps) | Valid Loss: 0.186527 | Image2Text Acc: 94.39 | Text2Image Acc: 93.83 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:17:49 | INFO | Rank 3 | Validation Result (epoch 2 @ 1050 steps) | Valid Loss: 0.186527 | Image2Text Acc: 94.39 | Text2Image Acc: 93.83 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:17:49 | INFO | Rank 1 | Validation Result (epoch 2 @ 1050 steps) | Valid Loss: 0.186527 | Image2Text Acc: 94.39 | Text2Image Acc: 93.83 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:17:49 | INFO | Rank 0 | Validation Result (epoch 2 @ 1050 steps) | Valid Loss: 0.186527 | Image2Text Acc: 94.39 | Text2Image Acc: 93.83 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:18:02 | INFO | Rank 0 | Global Steps: 1060/19560 | Train Epoch: 2 [20992/250368 (8%)] | Loss: 0.461898 | Image2Text Acc: 88.67 | Text2Image Acc: 83.98 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:18:14 | INFO | Rank 0 | Global Steps: 1070/19560 | Train Epoch: 2 [23552/250368 (9%)] | Loss: 0.543808 | Image2Text Acc: 82.42 | Text2Image Acc: 85.16 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:18:26 | INFO | Rank 0 | Global Steps: 1080/19560 | Train Epoch: 2 [26112/250368 (10%)] | Loss: 0.432875 | Image2Text Acc: 88.67 | Text2Image Acc: 86.33 | Data Time: 0.029s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:18:38 | INFO | Rank 0 | Global Steps: 1090/19560 | Train Epoch: 2 [28672/250368 (11%)] | Loss: 0.479413 | Image2Text Acc: 83.98 | Text2Image Acc: 82.42 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:18:50 | INFO | Rank 0 | Global Steps: 1100/19560 | Train Epoch: 2 [31232/250368 (12%)] | Loss: 0.397245 | Image2Text Acc: 88.28 | Text2Image Acc: 87.11 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:19:02 | INFO | Rank 0 | Global Steps: 1110/19560 | Train Epoch: 2 [33792/250368 (13%)] | Loss: 0.442849 | Image2Text Acc: 85.55 | Text2Image Acc: 88.28 | Data Time: 0.035s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:19:14 | INFO | Rank 0 | Global Steps: 1120/19560 | Train Epoch: 2 [36352/250368 (15%)] | Loss: 0.456059 | Image2Text Acc: 86.33 | Text2Image Acc: 86.72 | Data Time: 0.029s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:19:26 | INFO | Rank 0 | Global Steps: 1130/19560 | Train Epoch: 2 [38912/250368 (16%)] | Loss: 0.480951 | Image2Text Acc: 83.20 | Text2Image Acc: 85.94 | Data Time: 0.035s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:19:38 | INFO | Rank 0 | Global Steps: 1140/19560 | Train Epoch: 2 [41472/250368 (17%)] | Loss: 0.450780 | Image2Text Acc: 90.23 | Text2Image Acc: 86.72 | Data Time: 0.030s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:19:50 | INFO | Rank 0 | Global Steps: 1150/19560 | Train Epoch: 2 [44032/250368 (18%)] | Loss: 0.434089 | Image2Text Acc: 86.72 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:20:02 | INFO | Rank 0 | Global Steps: 1160/19560 | Train Epoch: 2 [46592/250368 (19%)] | Loss: 0.452634 | Image2Text Acc: 86.33 | Text2Image Acc: 87.89 | Data Time: 0.034s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:20:14 | INFO | Rank 0 | Global Steps: 1170/19560 | Train Epoch: 2 [49152/250368 (20%)] | Loss: 0.473955 | Image2Text Acc: 85.55 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:20:26 | INFO | Rank 0 | Global Steps: 1180/19560 | Train Epoch: 2 [51712/250368 (21%)] | Loss: 0.499845 | Image2Text Acc: 85.16 | Text2Image Acc: 85.55 | Data Time: 0.028s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:20:38 | INFO | Rank 0 | Global Steps: 1190/19560 | Train Epoch: 2 [54272/250368 (22%)] | Loss: 0.435588 | Image2Text Acc: 87.89 | Text2Image Acc: 86.33 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:20:50 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1200 steps)...
+2024-05-29,21:20:50 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1200 steps)...
+2024-05-29,21:20:50 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1200 steps)...
+2024-05-29,21:20:50 | INFO | Rank 0 | Global Steps: 1200/19560 | Train Epoch: 2 [56832/250368 (23%)] | Loss: 0.480470 | Image2Text Acc: 85.55 | Text2Image Acc: 85.94 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:20:50 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1200 steps)...
+2024-05-29,21:23:15 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:23:15 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:23:15 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:23:16 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:23:45 | INFO | Rank 2 | Validation Result (epoch 2 @ 1200 steps) | Valid Loss: 0.185778 | Image2Text Acc: 94.48 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:23:45 | INFO | Rank 1 | Validation Result (epoch 2 @ 1200 steps) | Valid Loss: 0.185778 | Image2Text Acc: 94.48 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:23:45 | INFO | Rank 3 | Validation Result (epoch 2 @ 1200 steps) | Valid Loss: 0.185778 | Image2Text Acc: 94.48 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:23:45 | INFO | Rank 0 | Validation Result (epoch 2 @ 1200 steps) | Valid Loss: 0.185778 | Image2Text Acc: 94.48 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:23:57 | INFO | Rank 0 | Global Steps: 1210/19560 | Train Epoch: 2 [59392/250368 (24%)] | Loss: 0.325935 | Image2Text Acc: 88.67 | Text2Image Acc: 87.89 | Data Time: 0.035s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:24:09 | INFO | Rank 0 | Global Steps: 1220/19560 | Train Epoch: 2 [61952/250368 (25%)] | Loss: 0.468368 | Image2Text Acc: 86.33 | Text2Image Acc: 85.16 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:24:21 | INFO | Rank 0 | Global Steps: 1230/19560 | Train Epoch: 2 [64512/250368 (26%)] | Loss: 0.364279 | Image2Text Acc: 88.28 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:24:33 | INFO | Rank 0 | Global Steps: 1240/19560 | Train Epoch: 2 [67072/250368 (27%)] | Loss: 0.469832 | Image2Text Acc: 82.42 | Text2Image Acc: 85.94 | Data Time: 0.033s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:24:45 | INFO | Rank 0 | Global Steps: 1250/19560 | Train Epoch: 2 [69632/250368 (28%)] | Loss: 0.442508 | Image2Text Acc: 88.67 | Text2Image Acc: 88.28 | Data Time: 0.036s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:24:57 | INFO | Rank 0 | Global Steps: 1260/19560 | Train Epoch: 2 [72192/250368 (29%)] | Loss: 0.471367 | Image2Text Acc: 86.72 | Text2Image Acc: 85.55 | Data Time: 0.029s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:25:09 | INFO | Rank 0 | Global Steps: 1270/19560 | Train Epoch: 2 [74752/250368 (30%)] | Loss: 0.463259 | Image2Text Acc: 87.50 | Text2Image Acc: 84.77 | Data Time: 0.029s | Batch Time: 1.209s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:25:21 | INFO | Rank 0 | Global Steps: 1280/19560 | Train Epoch: 2 [77312/250368 (31%)] | Loss: 0.392971 | Image2Text Acc: 88.28 | Text2Image Acc: 86.72 | Data Time: 0.033s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:25:33 | INFO | Rank 0 | Global Steps: 1290/19560 | Train Epoch: 2 [79872/250368 (32%)] | Loss: 0.440621 | Image2Text Acc: 86.72 | Text2Image Acc: 85.16 | Data Time: 0.032s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:25:45 | INFO | Rank 0 | Global Steps: 1300/19560 | Train Epoch: 2 [82432/250368 (33%)] | Loss: 0.397185 | Image2Text Acc: 87.89 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:25:57 | INFO | Rank 0 | Global Steps: 1310/19560 | Train Epoch: 2 [84992/250368 (34%)] | Loss: 0.386531 | Image2Text Acc: 91.02 | Text2Image Acc: 89.06 | Data Time: 0.031s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:26:10 | INFO | Rank 0 | Global Steps: 1320/19560 | Train Epoch: 2 [87552/250368 (35%)] | Loss: 0.418704 | Image2Text Acc: 87.11 | Text2Image Acc: 84.38 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:26:22 | INFO | Rank 0 | Global Steps: 1330/19560 | Train Epoch: 2 [90112/250368 (36%)] | Loss: 0.336757 | Image2Text Acc: 89.06 | Text2Image Acc: 90.62 | Data Time: 0.034s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:26:34 | INFO | Rank 0 | Global Steps: 1340/19560 | Train Epoch: 2 [92672/250368 (37%)] | Loss: 0.528444 | Image2Text Acc: 87.50 | Text2Image Acc: 85.55 | Data Time: 0.025s | Batch Time: 1.193s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:26:46 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1350 steps)...
+2024-05-29,21:26:46 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1350 steps)...
+2024-05-29,21:26:46 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1350 steps)...
+2024-05-29,21:26:46 | INFO | Rank 0 | Global Steps: 1350/19560 | Train Epoch: 2 [95232/250368 (38%)] | Loss: 0.410259 | Image2Text Acc: 89.45 | Text2Image Acc: 87.50 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:26:46 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1350 steps)...
+2024-05-29,21:29:10 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:29:11 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:29:11 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:29:11 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:29:41 | INFO | Rank 2 | Validation Result (epoch 2 @ 1350 steps) | Valid Loss: 0.183839 | Image2Text Acc: 94.48 | Text2Image Acc: 93.90 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:29:41 | INFO | Rank 3 | Validation Result (epoch 2 @ 1350 steps) | Valid Loss: 0.183839 | Image2Text Acc: 94.48 | Text2Image Acc: 93.90 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:29:41 | INFO | Rank 1 | Validation Result (epoch 2 @ 1350 steps) | Valid Loss: 0.183839 | Image2Text Acc: 94.48 | Text2Image Acc: 93.90 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:29:41 | INFO | Rank 0 | Validation Result (epoch 2 @ 1350 steps) | Valid Loss: 0.183839 | Image2Text Acc: 94.48 | Text2Image Acc: 93.90 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:29:53 | INFO | Rank 0 | Global Steps: 1360/19560 | Train Epoch: 2 [97792/250368 (39%)] | Loss: 0.440684 | Image2Text Acc: 86.72 | Text2Image Acc: 84.77 | Data Time: 0.029s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:30:05 | INFO | Rank 0 | Global Steps: 1370/19560 | Train Epoch: 2 [100352/250368 (40%)] | Loss: 0.529852 | Image2Text Acc: 83.98 | Text2Image Acc: 85.16 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:30:17 | INFO | Rank 0 | Global Steps: 1380/19560 | Train Epoch: 2 [102912/250368 (41%)] | Loss: 0.581827 | Image2Text Acc: 82.81 | Text2Image Acc: 83.98 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:30:29 | INFO | Rank 0 | Global Steps: 1390/19560 | Train Epoch: 2 [105472/250368 (42%)] | Loss: 0.437004 | Image2Text Acc: 87.11 | Text2Image Acc: 84.77 | Data Time: 0.036s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:30:41 | INFO | Rank 0 | Global Steps: 1400/19560 | Train Epoch: 2 [108032/250368 (43%)] | Loss: 0.530175 | Image2Text Acc: 83.59 | Text2Image Acc: 83.98 | Data Time: 0.029s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:30:53 | INFO | Rank 0 | Global Steps: 1410/19560 | Train Epoch: 2 [110592/250368 (44%)] | Loss: 0.382561 | Image2Text Acc: 87.11 | Text2Image Acc: 87.50 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:31:05 | INFO | Rank 0 | Global Steps: 1420/19560 | Train Epoch: 2 [113152/250368 (45%)] | Loss: 0.473977 | Image2Text Acc: 86.33 | Text2Image Acc: 85.55 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:31:17 | INFO | Rank 0 | Global Steps: 1430/19560 | Train Epoch: 2 [115712/250368 (46%)] | Loss: 0.416633 | Image2Text Acc: 86.72 | Text2Image Acc: 86.72 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:31:29 | INFO | Rank 0 | Global Steps: 1440/19560 | Train Epoch: 2 [118272/250368 (47%)] | Loss: 0.584886 | Image2Text Acc: 84.77 | Text2Image Acc: 84.38 | Data Time: 0.029s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:31:41 | INFO | Rank 0 | Global Steps: 1450/19560 | Train Epoch: 2 [120832/250368 (48%)] | Loss: 0.550679 | Image2Text Acc: 82.42 | Text2Image Acc: 82.03 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:31:53 | INFO | Rank 0 | Global Steps: 1460/19560 | Train Epoch: 2 [123392/250368 (49%)] | Loss: 0.559159 | Image2Text Acc: 83.98 | Text2Image Acc: 84.77 | Data Time: 0.028s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:32:05 | INFO | Rank 0 | Global Steps: 1470/19560 | Train Epoch: 2 [125952/250368 (50%)] | Loss: 0.513975 | Image2Text Acc: 85.55 | Text2Image Acc: 85.94 | Data Time: 0.034s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:32:17 | INFO | Rank 0 | Global Steps: 1480/19560 | Train Epoch: 2 [128512/250368 (51%)] | Loss: 0.494330 | Image2Text Acc: 87.89 | Text2Image Acc: 85.55 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:32:29 | INFO | Rank 0 | Global Steps: 1490/19560 | Train Epoch: 2 [131072/250368 (52%)] | Loss: 0.423609 | Image2Text Acc: 90.23 | Text2Image Acc: 85.94 | Data Time: 0.034s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:32:41 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1500 steps)...
+2024-05-29,21:32:41 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1500 steps)...
+2024-05-29,21:32:41 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1500 steps)...
+2024-05-29,21:32:41 | INFO | Rank 0 | Global Steps: 1500/19560 | Train Epoch: 2 [133632/250368 (53%)] | Loss: 0.464676 | Image2Text Acc: 85.94 | Text2Image Acc: 87.11 | Data Time: 0.028s | Batch Time: 1.205s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:32:41 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1500 steps)...
+2024-05-29,21:35:06 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:35:06 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:35:06 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:35:07 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:35:36 | INFO | Rank 2 | Validation Result (epoch 2 @ 1500 steps) | Valid Loss: 0.183276 | Image2Text Acc: 94.50 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:35:36 | INFO | Rank 1 | Validation Result (epoch 2 @ 1500 steps) | Valid Loss: 0.183276 | Image2Text Acc: 94.50 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:35:36 | INFO | Rank 3 | Validation Result (epoch 2 @ 1500 steps) | Valid Loss: 0.183276 | Image2Text Acc: 94.50 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:35:36 | INFO | Rank 0 | Validation Result (epoch 2 @ 1500 steps) | Valid Loss: 0.183276 | Image2Text Acc: 94.50 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:35:48 | INFO | Rank 0 | Global Steps: 1510/19560 | Train Epoch: 2 [136192/250368 (54%)] | Loss: 0.442607 | Image2Text Acc: 87.11 | Text2Image Acc: 86.33 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:36:00 | INFO | Rank 0 | Global Steps: 1520/19560 | Train Epoch: 2 [138752/250368 (55%)] | Loss: 0.401088 | Image2Text Acc: 89.06 | Text2Image Acc: 88.67 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:36:12 | INFO | Rank 0 | Global Steps: 1530/19560 | Train Epoch: 2 [141312/250368 (56%)] | Loss: 0.523508 | Image2Text Acc: 82.81 | Text2Image Acc: 83.59 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:36:24 | INFO | Rank 0 | Global Steps: 1540/19560 | Train Epoch: 2 [143872/250368 (57%)] | Loss: 0.498131 | Image2Text Acc: 87.11 | Text2Image Acc: 85.55 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:36:36 | INFO | Rank 0 | Global Steps: 1550/19560 | Train Epoch: 2 [146432/250368 (58%)] | Loss: 0.454624 | Image2Text Acc: 85.55 | Text2Image Acc: 83.59 | Data Time: 0.035s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:36:48 | INFO | Rank 0 | Global Steps: 1560/19560 | Train Epoch: 2 [148992/250368 (60%)] | Loss: 0.564033 | Image2Text Acc: 82.81 | Text2Image Acc: 84.38 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:37:00 | INFO | Rank 0 | Global Steps: 1570/19560 | Train Epoch: 2 [151552/250368 (61%)] | Loss: 0.481353 | Image2Text Acc: 86.72 | Text2Image Acc: 83.20 | Data Time: 0.034s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:37:12 | INFO | Rank 0 | Global Steps: 1580/19560 | Train Epoch: 2 [154112/250368 (62%)] | Loss: 0.465447 | Image2Text Acc: 83.98 | Text2Image Acc: 87.89 | Data Time: 0.028s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:37:24 | INFO | Rank 0 | Global Steps: 1590/19560 | Train Epoch: 2 [156672/250368 (63%)] | Loss: 0.456282 | Image2Text Acc: 83.59 | Text2Image Acc: 87.50 | Data Time: 0.034s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:37:36 | INFO | Rank 0 | Global Steps: 1600/19560 | Train Epoch: 2 [159232/250368 (64%)] | Loss: 0.448531 | Image2Text Acc: 85.94 | Text2Image Acc: 87.89 | Data Time: 0.027s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:37:49 | INFO | Rank 0 | Global Steps: 1610/19560 | Train Epoch: 2 [161792/250368 (65%)] | Loss: 0.457857 | Image2Text Acc: 86.33 | Text2Image Acc: 83.98 | Data Time: 0.036s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:38:01 | INFO | Rank 0 | Global Steps: 1620/19560 | Train Epoch: 2 [164352/250368 (66%)] | Loss: 0.496540 | Image2Text Acc: 84.77 | Text2Image Acc: 84.77 | Data Time: 0.029s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:38:13 | INFO | Rank 0 | Global Steps: 1630/19560 | Train Epoch: 2 [166912/250368 (67%)] | Loss: 0.398652 | Image2Text Acc: 88.67 | Text2Image Acc: 87.11 | Data Time: 0.035s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:38:25 | INFO | Rank 0 | Global Steps: 1640/19560 | Train Epoch: 2 [169472/250368 (68%)] | Loss: 0.435394 | Image2Text Acc: 86.33 | Text2Image Acc: 86.33 | Data Time: 0.028s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:38:37 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1650 steps)...
+2024-05-29,21:38:37 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1650 steps)...
+2024-05-29,21:38:37 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1650 steps)...
+2024-05-29,21:38:37 | INFO | Rank 0 | Global Steps: 1650/19560 | Train Epoch: 2 [172032/250368 (69%)] | Loss: 0.497656 | Image2Text Acc: 84.77 | Text2Image Acc: 85.94 | Data Time: 0.035s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:38:37 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1650 steps)...
+2024-05-29,21:41:01 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:41:02 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:41:02 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:41:02 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:41:32 | INFO | Rank 2 | Validation Result (epoch 2 @ 1650 steps) | Valid Loss: 0.182253 | Image2Text Acc: 94.53 | Text2Image Acc: 94.05 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:41:32 | INFO | Rank 3 | Validation Result (epoch 2 @ 1650 steps) | Valid Loss: 0.182253 | Image2Text Acc: 94.53 | Text2Image Acc: 94.05 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:41:32 | INFO | Rank 1 | Validation Result (epoch 2 @ 1650 steps) | Valid Loss: 0.182253 | Image2Text Acc: 94.53 | Text2Image Acc: 94.05 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:41:32 | INFO | Rank 0 | Validation Result (epoch 2 @ 1650 steps) | Valid Loss: 0.182253 | Image2Text Acc: 94.53 | Text2Image Acc: 94.05 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:41:44 | INFO | Rank 0 | Global Steps: 1660/19560 | Train Epoch: 2 [174592/250368 (70%)] | Loss: 0.435175 | Image2Text Acc: 87.11 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:41:56 | INFO | Rank 0 | Global Steps: 1670/19560 | Train Epoch: 2 [177152/250368 (71%)] | Loss: 0.441814 | Image2Text Acc: 84.77 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:42:08 | INFO | Rank 0 | Global Steps: 1680/19560 | Train Epoch: 2 [179712/250368 (72%)] | Loss: 0.428411 | Image2Text Acc: 87.89 | Text2Image Acc: 88.28 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:42:20 | INFO | Rank 0 | Global Steps: 1690/19560 | Train Epoch: 2 [182272/250368 (73%)] | Loss: 0.426194 | Image2Text Acc: 88.28 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:42:32 | INFO | Rank 0 | Global Steps: 1700/19560 | Train Epoch: 2 [184832/250368 (74%)] | Loss: 0.531683 | Image2Text Acc: 83.59 | Text2Image Acc: 85.94 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:42:44 | INFO | Rank 0 | Global Steps: 1710/19560 | Train Epoch: 2 [187392/250368 (75%)] | Loss: 0.544851 | Image2Text Acc: 83.20 | Text2Image Acc: 84.38 | Data Time: 0.035s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:42:56 | INFO | Rank 0 | Global Steps: 1720/19560 | Train Epoch: 2 [189952/250368 (76%)] | Loss: 0.550642 | Image2Text Acc: 80.86 | Text2Image Acc: 84.38 | Data Time: 0.028s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:43:08 | INFO | Rank 0 | Global Steps: 1730/19560 | Train Epoch: 2 [192512/250368 (77%)] | Loss: 0.417548 | Image2Text Acc: 87.89 | Text2Image Acc: 87.11 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:43:20 | INFO | Rank 0 | Global Steps: 1740/19560 | Train Epoch: 2 [195072/250368 (78%)] | Loss: 0.461675 | Image2Text Acc: 85.94 | Text2Image Acc: 87.11 | Data Time: 0.027s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:43:32 | INFO | Rank 0 | Global Steps: 1750/19560 | Train Epoch: 2 [197632/250368 (79%)] | Loss: 0.465641 | Image2Text Acc: 87.89 | Text2Image Acc: 88.67 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:43:44 | INFO | Rank 0 | Global Steps: 1760/19560 | Train Epoch: 2 [200192/250368 (80%)] | Loss: 0.361712 | Image2Text Acc: 89.45 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:43:56 | INFO | Rank 0 | Global Steps: 1770/19560 | Train Epoch: 2 [202752/250368 (81%)] | Loss: 0.412096 | Image2Text Acc: 87.11 | Text2Image Acc: 88.67 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:44:08 | INFO | Rank 0 | Global Steps: 1780/19560 | Train Epoch: 2 [205312/250368 (82%)] | Loss: 0.355628 | Image2Text Acc: 88.67 | Text2Image Acc: 90.62 | Data Time: 0.028s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:44:20 | INFO | Rank 0 | Global Steps: 1790/19560 | Train Epoch: 2 [207872/250368 (83%)] | Loss: 0.331531 | Image2Text Acc: 89.84 | Text2Image Acc: 89.84 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:44:32 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1800 steps)...
+2024-05-29,21:44:32 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1800 steps)...
+2024-05-29,21:44:32 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1800 steps)...
+2024-05-29,21:44:32 | INFO | Rank 0 | Global Steps: 1800/19560 | Train Epoch: 2 [210432/250368 (84%)] | Loss: 0.494755 | Image2Text Acc: 84.77 | Text2Image Acc: 83.59 | Data Time: 0.028s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:44:32 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1800 steps)...
+2024-05-29,21:46:57 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:46:57 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:46:57 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:46:58 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:47:27 | INFO | Rank 3 | Validation Result (epoch 2 @ 1800 steps) | Valid Loss: 0.180563 | Image2Text Acc: 94.55 | Text2Image Acc: 94.13 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:47:27 | INFO | Rank 2 | Validation Result (epoch 2 @ 1800 steps) | Valid Loss: 0.180563 | Image2Text Acc: 94.55 | Text2Image Acc: 94.13 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:47:27 | INFO | Rank 1 | Validation Result (epoch 2 @ 1800 steps) | Valid Loss: 0.180563 | Image2Text Acc: 94.55 | Text2Image Acc: 94.13 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:47:27 | INFO | Rank 0 | Validation Result (epoch 2 @ 1800 steps) | Valid Loss: 0.180563 | Image2Text Acc: 94.55 | Text2Image Acc: 94.13 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:47:39 | INFO | Rank 0 | Global Steps: 1810/19560 | Train Epoch: 2 [212992/250368 (85%)] | Loss: 0.418857 | Image2Text Acc: 85.94 | Text2Image Acc: 87.50 | Data Time: 0.035s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:47:51 | INFO | Rank 0 | Global Steps: 1820/19560 | Train Epoch: 2 [215552/250368 (86%)] | Loss: 0.442756 | Image2Text Acc: 87.11 | Text2Image Acc: 85.55 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:48:03 | INFO | Rank 0 | Global Steps: 1830/19560 | Train Epoch: 2 [218112/250368 (87%)] | Loss: 0.425322 | Image2Text Acc: 86.33 | Text2Image Acc: 87.50 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:48:15 | INFO | Rank 0 | Global Steps: 1840/19560 | Train Epoch: 2 [220672/250368 (88%)] | Loss: 0.408718 | Image2Text Acc: 87.11 | Text2Image Acc: 88.67 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:48:27 | INFO | Rank 0 | Global Steps: 1850/19560 | Train Epoch: 2 [223232/250368 (89%)] | Loss: 0.442231 | Image2Text Acc: 87.11 | Text2Image Acc: 86.33 | Data Time: 0.035s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:48:39 | INFO | Rank 0 | Global Steps: 1860/19560 | Train Epoch: 2 [225792/250368 (90%)] | Loss: 0.375386 | Image2Text Acc: 89.45 | Text2Image Acc: 89.45 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:48:51 | INFO | Rank 0 | Global Steps: 1870/19560 | Train Epoch: 2 [228352/250368 (91%)] | Loss: 0.340988 | Image2Text Acc: 89.45 | Text2Image Acc: 86.72 | Data Time: 0.034s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:49:03 | INFO | Rank 0 | Global Steps: 1880/19560 | Train Epoch: 2 [230912/250368 (92%)] | Loss: 0.444536 | Image2Text Acc: 86.72 | Text2Image Acc: 88.28 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:49:15 | INFO | Rank 0 | Global Steps: 1890/19560 | Train Epoch: 2 [233472/250368 (93%)] | Loss: 0.438135 | Image2Text Acc: 89.06 | Text2Image Acc: 85.16 | Data Time: 0.035s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:49:27 | INFO | Rank 0 | Global Steps: 1900/19560 | Train Epoch: 2 [236032/250368 (94%)] | Loss: 0.417299 | Image2Text Acc: 86.33 | Text2Image Acc: 87.11 | Data Time: 0.029s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:49:39 | INFO | Rank 0 | Global Steps: 1910/19560 | Train Epoch: 2 [238592/250368 (95%)] | Loss: 0.554482 | Image2Text Acc: 83.59 | Text2Image Acc: 82.03 | Data Time: 0.035s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:49:51 | INFO | Rank 0 | Global Steps: 1920/19560 | Train Epoch: 2 [241152/250368 (96%)] | Loss: 0.547543 | Image2Text Acc: 82.81 | Text2Image Acc: 85.94 | Data Time: 0.032s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:50:03 | INFO | Rank 0 | Global Steps: 1930/19560 | Train Epoch: 2 [243712/250368 (97%)] | Loss: 0.371723 | Image2Text Acc: 89.45 | Text2Image Acc: 88.67 | Data Time: 0.034s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:50:15 | INFO | Rank 0 | Global Steps: 1940/19560 | Train Epoch: 2 [246272/250368 (98%)] | Loss: 0.822328 | Image2Text Acc: 81.25 | Text2Image Acc: 77.73 | Data Time: 0.026s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:50:27 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1950 steps)...
+2024-05-29,21:50:27 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1950 steps)...
+2024-05-29,21:50:27 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1950 steps)...
+2024-05-29,21:50:27 | INFO | Rank 0 | Global Steps: 1950/19560 | Train Epoch: 2 [248832/250368 (99%)] | Loss: 0.581376 | Image2Text Acc: 83.98 | Text2Image Acc: 82.42 | Data Time: 0.035s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:50:27 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1950 steps)...
+2024-05-29,21:52:52 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:52:52 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:52:52 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:52:53 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:53:22 | INFO | Rank 2 | Validation Result (epoch 2 @ 1950 steps) | Valid Loss: 0.181161 | Image2Text Acc: 94.53 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:53:22 | INFO | Rank 3 | Validation Result (epoch 2 @ 1950 steps) | Valid Loss: 0.181161 | Image2Text Acc: 94.53 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:53:22 | INFO | Rank 1 | Validation Result (epoch 2 @ 1950 steps) | Valid Loss: 0.181161 | Image2Text Acc: 94.53 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:53:22 | INFO | Rank 0 | Validation Result (epoch 2 @ 1950 steps) | Valid Loss: 0.181161 | Image2Text Acc: 94.53 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:53:30 | INFO | Rank 3 | Begin to eval on validation set (epoch 2 @ 1956 steps)...
+2024-05-29,21:53:30 | INFO | Rank 2 | Begin to eval on validation set (epoch 2 @ 1956 steps)...
+2024-05-29,21:53:30 | INFO | Rank 1 | Begin to eval on validation set (epoch 2 @ 1956 steps)...
+2024-05-29,21:53:30 | INFO | Rank 0 | Begin to eval on validation set (epoch 2 @ 1956 steps)...
+2024-05-29,21:55:55 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,21:55:55 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,21:55:55 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,21:55:55 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,21:56:25 | INFO | Rank 2 | Validation Result (epoch 2 @ 1956 steps) | Valid Loss: 0.181048 | Image2Text Acc: 94.51 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:56:25 | INFO | Rank 3 | Validation Result (epoch 2 @ 1956 steps) | Valid Loss: 0.181048 | Image2Text Acc: 94.51 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:56:25 | INFO | Rank 1 | Validation Result (epoch 2 @ 1956 steps) | Valid Loss: 0.181048 | Image2Text Acc: 94.51 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:56:25 | INFO | Rank 0 | Validation Result (epoch 2 @ 1956 steps) | Valid Loss: 0.181048 | Image2Text Acc: 94.51 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,21:56:25 | INFO | Rank 1 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:56:25 | INFO | Rank 2 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:56:25 | INFO | Rank 0 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:56:25 | INFO | Rank 3 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,21:56:25 | INFO | Rank 1 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:56:25 | INFO | Rank 3 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:56:25 | INFO | Rank 0 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:56:25 | INFO | Rank 2 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,21:56:25 | INFO | Rank 1 | Start epoch 3
+2024-05-29,21:56:25 | INFO | Rank 2 | Start epoch 3
+2024-05-29,21:56:25 | INFO | Rank 3 | Start epoch 3
+2024-05-29,21:57:04 | INFO | Rank 0 | Saved checkpoint /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints/epoch2.pt (epoch 2 @ 1956 steps) (writing took 38.85060906410217 seconds)
+2024-05-29,21:57:45 | INFO | Rank 0 | Saved checkpoint /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints/epoch_latest.pt (epoch 2 @ 1956 steps) (writing took 40.35325217247009 seconds)
+2024-05-29,21:57:50 | INFO | Rank 0 | Global Steps: 1960/19560 | Train Epoch: 3 [1024/250368 (0%)] | Loss: 0.315007 | Image2Text Acc: 89.06 | Text2Image Acc: 92.19 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:58:02 | INFO | Rank 0 | Global Steps: 1970/19560 | Train Epoch: 3 [3584/250368 (1%)] | Loss: 0.319533 | Image2Text Acc: 87.50 | Text2Image Acc: 91.02 | Data Time: 0.025s | Batch Time: 1.191s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:58:14 | INFO | Rank 0 | Global Steps: 1980/19560 | Train Epoch: 3 [6144/250368 (2%)] | Loss: 0.343004 | Image2Text Acc: 90.23 | Text2Image Acc: 87.11 | Data Time: 0.030s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:58:26 | INFO | Rank 0 | Global Steps: 1990/19560 | Train Epoch: 3 [8704/250368 (3%)] | Loss: 0.310965 | Image2Text Acc: 88.67 | Text2Image Acc: 89.45 | Data Time: 0.032s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:58:38 | INFO | Rank 0 | Global Steps: 2000/19560 | Train Epoch: 3 [11264/250368 (4%)] | Loss: 0.384143 | Image2Text Acc: 88.28 | Text2Image Acc: 85.94 | Data Time: 0.034s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:58:50 | INFO | Rank 0 | Global Steps: 2010/19560 | Train Epoch: 3 [13824/250368 (6%)] | Loss: 0.481776 | Image2Text Acc: 85.16 | Text2Image Acc: 86.72 | Data Time: 0.031s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:59:02 | INFO | Rank 0 | Global Steps: 2020/19560 | Train Epoch: 3 [16384/250368 (7%)] | Loss: 0.362650 | Image2Text Acc: 84.77 | Text2Image Acc: 89.84 | Data Time: 0.035s | Batch Time: 1.208s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:59:14 | INFO | Rank 0 | Global Steps: 2030/19560 | Train Epoch: 3 [18944/250368 (8%)] | Loss: 0.394338 | Image2Text Acc: 85.94 | Text2Image Acc: 86.72 | Data Time: 0.028s | Batch Time: 1.212s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:59:26 | INFO | Rank 0 | Global Steps: 2040/19560 | Train Epoch: 3 [21504/250368 (9%)] | Loss: 0.360993 | Image2Text Acc: 88.67 | Text2Image Acc: 85.94 | Data Time: 0.035s | Batch Time: 1.206s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:59:38 | INFO | Rank 0 | Global Steps: 2050/19560 | Train Epoch: 3 [24064/250368 (10%)] | Loss: 0.321597 | Image2Text Acc: 90.62 | Text2Image Acc: 90.23 | Data Time: 0.027s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,21:59:50 | INFO | Rank 0 | Global Steps: 2060/19560 | Train Epoch: 3 [26624/250368 (11%)] | Loss: 0.452083 | Image2Text Acc: 86.72 | Text2Image Acc: 85.16 | Data Time: 0.033s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:00:02 | INFO | Rank 0 | Global Steps: 2070/19560 | Train Epoch: 3 [29184/250368 (12%)] | Loss: 0.272055 | Image2Text Acc: 91.80 | Text2Image Acc: 89.06 | Data Time: 0.031s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:00:14 | INFO | Rank 0 | Global Steps: 2080/19560 | Train Epoch: 3 [31744/250368 (13%)] | Loss: 0.345532 | Image2Text Acc: 85.94 | Text2Image Acc: 88.67 | Data Time: 0.031s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:00:26 | INFO | Rank 0 | Global Steps: 2090/19560 | Train Epoch: 3 [34304/250368 (14%)] | Loss: 0.312836 | Image2Text Acc: 88.67 | Text2Image Acc: 89.45 | Data Time: 0.033s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:00:38 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2100 steps)...
+2024-05-29,22:00:38 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2100 steps)...
+2024-05-29,22:00:38 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2100 steps)...
+2024-05-29,22:00:38 | INFO | Rank 0 | Global Steps: 2100/19560 | Train Epoch: 3 [36864/250368 (15%)] | Loss: 0.328083 | Image2Text Acc: 91.41 | Text2Image Acc: 90.23 | Data Time: 0.025s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:00:38 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2100 steps)...
+2024-05-29,22:03:03 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:03:03 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:03:04 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:03:04 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:03:34 | INFO | Rank 2 | Validation Result (epoch 3 @ 2100 steps) | Valid Loss: 0.186071 | Image2Text Acc: 94.55 | Text2Image Acc: 93.99 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:03:34 | INFO | Rank 1 | Validation Result (epoch 3 @ 2100 steps) | Valid Loss: 0.186071 | Image2Text Acc: 94.55 | Text2Image Acc: 93.99 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:03:34 | INFO | Rank 3 | Validation Result (epoch 3 @ 2100 steps) | Valid Loss: 0.186071 | Image2Text Acc: 94.55 | Text2Image Acc: 93.99 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:03:34 | INFO | Rank 0 | Validation Result (epoch 3 @ 2100 steps) | Valid Loss: 0.186071 | Image2Text Acc: 94.55 | Text2Image Acc: 93.99 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:03:46 | INFO | Rank 0 | Global Steps: 2110/19560 | Train Epoch: 3 [39424/250368 (16%)] | Loss: 0.384200 | Image2Text Acc: 86.72 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:03:58 | INFO | Rank 0 | Global Steps: 2120/19560 | Train Epoch: 3 [41984/250368 (17%)] | Loss: 0.455572 | Image2Text Acc: 82.81 | Text2Image Acc: 85.94 | Data Time: 0.035s | Batch Time: 1.206s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:04:10 | INFO | Rank 0 | Global Steps: 2130/19560 | Train Epoch: 3 [44544/250368 (18%)] | Loss: 0.423768 | Image2Text Acc: 88.28 | Text2Image Acc: 85.16 | Data Time: 0.035s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:04:22 | INFO | Rank 0 | Global Steps: 2140/19560 | Train Epoch: 3 [47104/250368 (19%)] | Loss: 0.239926 | Image2Text Acc: 91.80 | Text2Image Acc: 91.80 | Data Time: 0.037s | Batch Time: 1.205s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:04:34 | INFO | Rank 0 | Global Steps: 2150/19560 | Train Epoch: 3 [49664/250368 (20%)] | Loss: 0.345989 | Image2Text Acc: 88.28 | Text2Image Acc: 85.94 | Data Time: 0.028s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:04:46 | INFO | Rank 0 | Global Steps: 2160/19560 | Train Epoch: 3 [52224/250368 (21%)] | Loss: 0.324331 | Image2Text Acc: 89.45 | Text2Image Acc: 89.06 | Data Time: 0.026s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:04:58 | INFO | Rank 0 | Global Steps: 2170/19560 | Train Epoch: 3 [54784/250368 (22%)] | Loss: 0.417162 | Image2Text Acc: 87.50 | Text2Image Acc: 86.33 | Data Time: 0.027s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:05:10 | INFO | Rank 0 | Global Steps: 2180/19560 | Train Epoch: 3 [57344/250368 (23%)] | Loss: 0.259235 | Image2Text Acc: 91.80 | Text2Image Acc: 92.58 | Data Time: 0.026s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:05:22 | INFO | Rank 0 | Global Steps: 2190/19560 | Train Epoch: 3 [59904/250368 (24%)] | Loss: 0.336874 | Image2Text Acc: 90.62 | Text2Image Acc: 91.41 | Data Time: 0.025s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:05:34 | INFO | Rank 0 | Global Steps: 2200/19560 | Train Epoch: 3 [62464/250368 (25%)] | Loss: 0.387072 | Image2Text Acc: 86.72 | Text2Image Acc: 88.28 | Data Time: 0.031s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:05:46 | INFO | Rank 0 | Global Steps: 2210/19560 | Train Epoch: 3 [65024/250368 (26%)] | Loss: 0.277862 | Image2Text Acc: 91.41 | Text2Image Acc: 90.62 | Data Time: 0.030s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:05:58 | INFO | Rank 0 | Global Steps: 2220/19560 | Train Epoch: 3 [67584/250368 (27%)] | Loss: 0.329961 | Image2Text Acc: 91.41 | Text2Image Acc: 90.62 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:06:10 | INFO | Rank 0 | Global Steps: 2230/19560 | Train Epoch: 3 [70144/250368 (28%)] | Loss: 0.420494 | Image2Text Acc: 85.94 | Text2Image Acc: 85.16 | Data Time: 0.026s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:06:22 | INFO | Rank 0 | Global Steps: 2240/19560 | Train Epoch: 3 [72704/250368 (29%)] | Loss: 0.296179 | Image2Text Acc: 91.02 | Text2Image Acc: 90.23 | Data Time: 0.026s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:06:34 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2250 steps)...
+2024-05-29,22:06:34 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2250 steps)...
+2024-05-29,22:06:34 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2250 steps)...
+2024-05-29,22:06:34 | INFO | Rank 0 | Global Steps: 2250/19560 | Train Epoch: 3 [75264/250368 (30%)] | Loss: 0.431201 | Image2Text Acc: 86.72 | Text2Image Acc: 87.50 | Data Time: 0.026s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:06:34 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2250 steps)...
+2024-05-29,22:08:59 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:08:59 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:08:59 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:09:00 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:09:29 | INFO | Rank 3 | Validation Result (epoch 3 @ 2250 steps) | Valid Loss: 0.186780 | Image2Text Acc: 94.52 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:09:29 | INFO | Rank 2 | Validation Result (epoch 3 @ 2250 steps) | Valid Loss: 0.186780 | Image2Text Acc: 94.52 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:09:29 | INFO | Rank 1 | Validation Result (epoch 3 @ 2250 steps) | Valid Loss: 0.186780 | Image2Text Acc: 94.52 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:09:29 | INFO | Rank 0 | Validation Result (epoch 3 @ 2250 steps) | Valid Loss: 0.186780 | Image2Text Acc: 94.52 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:09:41 | INFO | Rank 0 | Global Steps: 2260/19560 | Train Epoch: 3 [77824/250368 (31%)] | Loss: 0.405273 | Image2Text Acc: 87.89 | Text2Image Acc: 87.89 | Data Time: 0.026s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:09:53 | INFO | Rank 0 | Global Steps: 2270/19560 | Train Epoch: 3 [80384/250368 (32%)] | Loss: 0.287157 | Image2Text Acc: 90.23 | Text2Image Acc: 90.62 | Data Time: 0.026s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:10:05 | INFO | Rank 0 | Global Steps: 2280/19560 | Train Epoch: 3 [82944/250368 (33%)] | Loss: 0.401934 | Image2Text Acc: 84.38 | Text2Image Acc: 85.55 | Data Time: 0.026s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:10:17 | INFO | Rank 0 | Global Steps: 2290/19560 | Train Epoch: 3 [85504/250368 (34%)] | Loss: 0.337210 | Image2Text Acc: 89.06 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:10:29 | INFO | Rank 0 | Global Steps: 2300/19560 | Train Epoch: 3 [88064/250368 (35%)] | Loss: 0.407581 | Image2Text Acc: 90.62 | Text2Image Acc: 87.89 | Data Time: 0.026s | Batch Time: 1.192s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:10:41 | INFO | Rank 0 | Global Steps: 2310/19560 | Train Epoch: 3 [90624/250368 (36%)] | Loss: 0.368483 | Image2Text Acc: 87.89 | Text2Image Acc: 85.55 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:10:53 | INFO | Rank 0 | Global Steps: 2320/19560 | Train Epoch: 3 [93184/250368 (37%)] | Loss: 0.361998 | Image2Text Acc: 85.55 | Text2Image Acc: 88.67 | Data Time: 0.033s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:11:05 | INFO | Rank 0 | Global Steps: 2330/19560 | Train Epoch: 3 [95744/250368 (38%)] | Loss: 0.339717 | Image2Text Acc: 89.06 | Text2Image Acc: 88.67 | Data Time: 0.026s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:11:17 | INFO | Rank 0 | Global Steps: 2340/19560 | Train Epoch: 3 [98304/250368 (39%)] | Loss: 0.411697 | Image2Text Acc: 88.28 | Text2Image Acc: 86.72 | Data Time: 0.026s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:11:29 | INFO | Rank 0 | Global Steps: 2350/19560 | Train Epoch: 3 [100864/250368 (40%)] | Loss: 0.384398 | Image2Text Acc: 88.28 | Text2Image Acc: 89.84 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:11:41 | INFO | Rank 0 | Global Steps: 2360/19560 | Train Epoch: 3 [103424/250368 (41%)] | Loss: 0.310244 | Image2Text Acc: 92.19 | Text2Image Acc: 89.84 | Data Time: 0.026s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:11:53 | INFO | Rank 0 | Global Steps: 2370/19560 | Train Epoch: 3 [105984/250368 (42%)] | Loss: 0.319769 | Image2Text Acc: 91.02 | Text2Image Acc: 87.89 | Data Time: 0.026s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:12:05 | INFO | Rank 0 | Global Steps: 2380/19560 | Train Epoch: 3 [108544/250368 (43%)] | Loss: 0.380247 | Image2Text Acc: 85.16 | Text2Image Acc: 87.11 | Data Time: 0.028s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:12:17 | INFO | Rank 0 | Global Steps: 2390/19560 | Train Epoch: 3 [111104/250368 (44%)] | Loss: 0.313563 | Image2Text Acc: 91.02 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:12:29 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2400 steps)...
+2024-05-29,22:12:29 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2400 steps)...
+2024-05-29,22:12:29 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2400 steps)...
+2024-05-29,22:12:29 | INFO | Rank 0 | Global Steps: 2400/19560 | Train Epoch: 3 [113664/250368 (45%)] | Loss: 0.263169 | Image2Text Acc: 91.41 | Text2Image Acc: 91.80 | Data Time: 0.029s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:12:29 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2400 steps)...
+2024-05-29,22:14:54 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:14:54 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:14:54 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:14:55 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:15:24 | INFO | Rank 1 | Validation Result (epoch 3 @ 2400 steps) | Valid Loss: 0.189576 | Image2Text Acc: 94.45 | Text2Image Acc: 93.89 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:15:24 | INFO | Rank 3 | Validation Result (epoch 3 @ 2400 steps) | Valid Loss: 0.189576 | Image2Text Acc: 94.45 | Text2Image Acc: 93.89 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:15:24 | INFO | Rank 2 | Validation Result (epoch 3 @ 2400 steps) | Valid Loss: 0.189576 | Image2Text Acc: 94.45 | Text2Image Acc: 93.89 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:15:24 | INFO | Rank 0 | Validation Result (epoch 3 @ 2400 steps) | Valid Loss: 0.189576 | Image2Text Acc: 94.45 | Text2Image Acc: 93.89 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:15:37 | INFO | Rank 0 | Global Steps: 2410/19560 | Train Epoch: 3 [116224/250368 (46%)] | Loss: 0.440558 | Image2Text Acc: 87.50 | Text2Image Acc: 84.38 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:15:48 | INFO | Rank 0 | Global Steps: 2420/19560 | Train Epoch: 3 [118784/250368 (47%)] | Loss: 0.337368 | Image2Text Acc: 87.89 | Text2Image Acc: 90.62 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:16:00 | INFO | Rank 0 | Global Steps: 2430/19560 | Train Epoch: 3 [121344/250368 (48%)] | Loss: 0.420195 | Image2Text Acc: 87.11 | Text2Image Acc: 86.72 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:16:12 | INFO | Rank 0 | Global Steps: 2440/19560 | Train Epoch: 3 [123904/250368 (49%)] | Loss: 0.381505 | Image2Text Acc: 86.72 | Text2Image Acc: 87.11 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:16:24 | INFO | Rank 0 | Global Steps: 2450/19560 | Train Epoch: 3 [126464/250368 (51%)] | Loss: 0.388544 | Image2Text Acc: 86.72 | Text2Image Acc: 87.89 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:16:36 | INFO | Rank 0 | Global Steps: 2460/19560 | Train Epoch: 3 [129024/250368 (52%)] | Loss: 0.269754 | Image2Text Acc: 91.80 | Text2Image Acc: 91.02 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:16:48 | INFO | Rank 0 | Global Steps: 2470/19560 | Train Epoch: 3 [131584/250368 (53%)] | Loss: 0.273727 | Image2Text Acc: 91.41 | Text2Image Acc: 92.19 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:17:00 | INFO | Rank 0 | Global Steps: 2480/19560 | Train Epoch: 3 [134144/250368 (54%)] | Loss: 0.265736 | Image2Text Acc: 92.19 | Text2Image Acc: 92.19 | Data Time: 0.029s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:17:12 | INFO | Rank 0 | Global Steps: 2490/19560 | Train Epoch: 3 [136704/250368 (55%)] | Loss: 0.432633 | Image2Text Acc: 85.16 | Text2Image Acc: 85.94 | Data Time: 0.028s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:17:24 | INFO | Rank 0 | Global Steps: 2500/19560 | Train Epoch: 3 [139264/250368 (56%)] | Loss: 0.278924 | Image2Text Acc: 90.62 | Text2Image Acc: 91.02 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:17:36 | INFO | Rank 0 | Global Steps: 2510/19560 | Train Epoch: 3 [141824/250368 (57%)] | Loss: 0.331499 | Image2Text Acc: 89.84 | Text2Image Acc: 89.45 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:17:48 | INFO | Rank 0 | Global Steps: 2520/19560 | Train Epoch: 3 [144384/250368 (58%)] | Loss: 0.279391 | Image2Text Acc: 91.41 | Text2Image Acc: 92.58 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:18:00 | INFO | Rank 0 | Global Steps: 2530/19560 | Train Epoch: 3 [146944/250368 (59%)] | Loss: 0.247254 | Image2Text Acc: 92.19 | Text2Image Acc: 91.41 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:18:12 | INFO | Rank 0 | Global Steps: 2540/19560 | Train Epoch: 3 [149504/250368 (60%)] | Loss: 0.292654 | Image2Text Acc: 91.41 | Text2Image Acc: 90.23 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:18:24 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2550 steps)...
+2024-05-29,22:18:24 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2550 steps)...
+2024-05-29,22:18:24 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2550 steps)...
+2024-05-29,22:18:24 | INFO | Rank 0 | Global Steps: 2550/19560 | Train Epoch: 3 [152064/250368 (61%)] | Loss: 0.292398 | Image2Text Acc: 91.02 | Text2Image Acc: 92.19 | Data Time: 0.027s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:18:24 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2550 steps)...
+2024-05-29,22:20:49 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:20:49 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:20:50 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:20:50 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:21:19 | INFO | Rank 3 | Validation Result (epoch 3 @ 2550 steps) | Valid Loss: 0.189918 | Image2Text Acc: 94.38 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:21:19 | INFO | Rank 2 | Validation Result (epoch 3 @ 2550 steps) | Valid Loss: 0.189918 | Image2Text Acc: 94.38 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:21:19 | INFO | Rank 1 | Validation Result (epoch 3 @ 2550 steps) | Valid Loss: 0.189918 | Image2Text Acc: 94.38 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:21:19 | INFO | Rank 0 | Validation Result (epoch 3 @ 2550 steps) | Valid Loss: 0.189918 | Image2Text Acc: 94.38 | Text2Image Acc: 93.94 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:21:32 | INFO | Rank 0 | Global Steps: 2560/19560 | Train Epoch: 3 [154624/250368 (62%)] | Loss: 0.361940 | Image2Text Acc: 88.67 | Text2Image Acc: 89.45 | Data Time: 0.028s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:21:44 | INFO | Rank 0 | Global Steps: 2570/19560 | Train Epoch: 3 [157184/250368 (63%)] | Loss: 0.379839 | Image2Text Acc: 91.41 | Text2Image Acc: 88.28 | Data Time: 0.033s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:21:56 | INFO | Rank 0 | Global Steps: 2580/19560 | Train Epoch: 3 [159744/250368 (64%)] | Loss: 0.430146 | Image2Text Acc: 85.16 | Text2Image Acc: 87.89 | Data Time: 0.028s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:22:08 | INFO | Rank 0 | Global Steps: 2590/19560 | Train Epoch: 3 [162304/250368 (65%)] | Loss: 0.248029 | Image2Text Acc: 92.19 | Text2Image Acc: 93.75 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:22:20 | INFO | Rank 0 | Global Steps: 2600/19560 | Train Epoch: 3 [164864/250368 (66%)] | Loss: 0.434678 | Image2Text Acc: 87.50 | Text2Image Acc: 88.28 | Data Time: 0.035s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:22:32 | INFO | Rank 0 | Global Steps: 2610/19560 | Train Epoch: 3 [167424/250368 (67%)] | Loss: 0.314967 | Image2Text Acc: 90.62 | Text2Image Acc: 89.84 | Data Time: 0.028s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:22:44 | INFO | Rank 0 | Global Steps: 2620/19560 | Train Epoch: 3 [169984/250368 (68%)] | Loss: 0.307637 | Image2Text Acc: 89.45 | Text2Image Acc: 90.23 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:22:56 | INFO | Rank 0 | Global Steps: 2630/19560 | Train Epoch: 3 [172544/250368 (69%)] | Loss: 0.377713 | Image2Text Acc: 89.06 | Text2Image Acc: 88.28 | Data Time: 0.034s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:23:08 | INFO | Rank 0 | Global Steps: 2640/19560 | Train Epoch: 3 [175104/250368 (70%)] | Loss: 0.337260 | Image2Text Acc: 87.50 | Text2Image Acc: 88.28 | Data Time: 0.034s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:23:20 | INFO | Rank 0 | Global Steps: 2650/19560 | Train Epoch: 3 [177664/250368 (71%)] | Loss: 0.291139 | Image2Text Acc: 91.02 | Text2Image Acc: 90.62 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:23:32 | INFO | Rank 0 | Global Steps: 2660/19560 | Train Epoch: 3 [180224/250368 (72%)] | Loss: 0.313191 | Image2Text Acc: 88.28 | Text2Image Acc: 89.84 | Data Time: 0.029s | Batch Time: 1.204s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:23:44 | INFO | Rank 0 | Global Steps: 2670/19560 | Train Epoch: 3 [182784/250368 (73%)] | Loss: 0.372287 | Image2Text Acc: 89.06 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:23:56 | INFO | Rank 0 | Global Steps: 2680/19560 | Train Epoch: 3 [185344/250368 (74%)] | Loss: 0.318562 | Image2Text Acc: 89.45 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:24:08 | INFO | Rank 0 | Global Steps: 2690/19560 | Train Epoch: 3 [187904/250368 (75%)] | Loss: 0.294685 | Image2Text Acc: 91.80 | Text2Image Acc: 91.02 | Data Time: 0.028s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:24:19 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2700 steps)...
+2024-05-29,22:24:19 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2700 steps)...
+2024-05-29,22:24:19 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2700 steps)...
+2024-05-29,22:24:19 | INFO | Rank 0 | Global Steps: 2700/19560 | Train Epoch: 3 [190464/250368 (76%)] | Loss: 0.380653 | Image2Text Acc: 86.33 | Text2Image Acc: 89.45 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:24:19 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2700 steps)...
+2024-05-29,22:26:45 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:26:45 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:26:45 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:26:45 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:27:14 | INFO | Rank 2 | Validation Result (epoch 3 @ 2700 steps) | Valid Loss: 0.188151 | Image2Text Acc: 94.58 | Text2Image Acc: 94.00 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:27:14 | INFO | Rank 1 | Validation Result (epoch 3 @ 2700 steps) | Valid Loss: 0.188151 | Image2Text Acc: 94.58 | Text2Image Acc: 94.00 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:27:14 | INFO | Rank 3 | Validation Result (epoch 3 @ 2700 steps) | Valid Loss: 0.188151 | Image2Text Acc: 94.58 | Text2Image Acc: 94.00 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:27:14 | INFO | Rank 0 | Validation Result (epoch 3 @ 2700 steps) | Valid Loss: 0.188151 | Image2Text Acc: 94.58 | Text2Image Acc: 94.00 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:27:27 | INFO | Rank 0 | Global Steps: 2710/19560 | Train Epoch: 3 [193024/250368 (77%)] | Loss: 0.263424 | Image2Text Acc: 89.45 | Text2Image Acc: 91.80 | Data Time: 0.027s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:27:39 | INFO | Rank 0 | Global Steps: 2720/19560 | Train Epoch: 3 [195584/250368 (78%)] | Loss: 0.315965 | Image2Text Acc: 90.62 | Text2Image Acc: 91.41 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:27:51 | INFO | Rank 0 | Global Steps: 2730/19560 | Train Epoch: 3 [198144/250368 (79%)] | Loss: 0.408297 | Image2Text Acc: 86.72 | Text2Image Acc: 88.28 | Data Time: 0.028s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:28:03 | INFO | Rank 0 | Global Steps: 2740/19560 | Train Epoch: 3 [200704/250368 (80%)] | Loss: 0.325306 | Image2Text Acc: 87.50 | Text2Image Acc: 89.84 | Data Time: 0.028s | Batch Time: 1.205s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:28:15 | INFO | Rank 0 | Global Steps: 2750/19560 | Train Epoch: 3 [203264/250368 (81%)] | Loss: 0.285271 | Image2Text Acc: 91.80 | Text2Image Acc: 90.62 | Data Time: 0.029s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:28:27 | INFO | Rank 0 | Global Steps: 2760/19560 | Train Epoch: 3 [205824/250368 (82%)] | Loss: 0.425492 | Image2Text Acc: 84.77 | Text2Image Acc: 83.98 | Data Time: 0.031s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:28:39 | INFO | Rank 0 | Global Steps: 2770/19560 | Train Epoch: 3 [208384/250368 (83%)] | Loss: 0.464026 | Image2Text Acc: 87.89 | Text2Image Acc: 86.33 | Data Time: 0.028s | Batch Time: 1.202s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:28:51 | INFO | Rank 0 | Global Steps: 2780/19560 | Train Epoch: 3 [210944/250368 (84%)] | Loss: 0.338278 | Image2Text Acc: 91.80 | Text2Image Acc: 88.67 | Data Time: 0.029s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:29:03 | INFO | Rank 0 | Global Steps: 2790/19560 | Train Epoch: 3 [213504/250368 (85%)] | Loss: 0.285376 | Image2Text Acc: 91.80 | Text2Image Acc: 91.02 | Data Time: 0.030s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:29:15 | INFO | Rank 0 | Global Steps: 2800/19560 | Train Epoch: 3 [216064/250368 (86%)] | Loss: 0.397440 | Image2Text Acc: 88.28 | Text2Image Acc: 87.11 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:29:27 | INFO | Rank 0 | Global Steps: 2810/19560 | Train Epoch: 3 [218624/250368 (87%)] | Loss: 0.439282 | Image2Text Acc: 83.98 | Text2Image Acc: 84.77 | Data Time: 0.029s | Batch Time: 1.203s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:29:39 | INFO | Rank 0 | Global Steps: 2820/19560 | Train Epoch: 3 [221184/250368 (88%)] | Loss: 0.441885 | Image2Text Acc: 85.94 | Text2Image Acc: 85.94 | Data Time: 0.029s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:29:51 | INFO | Rank 0 | Global Steps: 2830/19560 | Train Epoch: 3 [223744/250368 (89%)] | Loss: 0.352802 | Image2Text Acc: 89.45 | Text2Image Acc: 90.23 | Data Time: 0.030s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:30:03 | INFO | Rank 0 | Global Steps: 2840/19560 | Train Epoch: 3 [226304/250368 (90%)] | Loss: 0.337379 | Image2Text Acc: 89.45 | Text2Image Acc: 89.84 | Data Time: 0.030s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:30:15 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2850 steps)...
+2024-05-29,22:30:15 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2850 steps)...
+2024-05-29,22:30:15 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2850 steps)...
+2024-05-29,22:30:15 | INFO | Rank 0 | Global Steps: 2850/19560 | Train Epoch: 3 [228864/250368 (91%)] | Loss: 0.304215 | Image2Text Acc: 92.19 | Text2Image Acc: 91.02 | Data Time: 0.030s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:30:15 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2850 steps)...
+2024-05-29,22:32:40 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:32:40 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:32:40 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:32:40 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:33:10 | INFO | Rank 2 | Validation Result (epoch 3 @ 2850 steps) | Valid Loss: 0.189291 | Image2Text Acc: 94.48 | Text2Image Acc: 94.02 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:33:10 | INFO | Rank 3 | Validation Result (epoch 3 @ 2850 steps) | Valid Loss: 0.189291 | Image2Text Acc: 94.48 | Text2Image Acc: 94.02 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:33:10 | INFO | Rank 1 | Validation Result (epoch 3 @ 2850 steps) | Valid Loss: 0.189291 | Image2Text Acc: 94.48 | Text2Image Acc: 94.02 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:33:10 | INFO | Rank 0 | Validation Result (epoch 3 @ 2850 steps) | Valid Loss: 0.189291 | Image2Text Acc: 94.48 | Text2Image Acc: 94.02 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:33:22 | INFO | Rank 0 | Global Steps: 2860/19560 | Train Epoch: 3 [231424/250368 (92%)] | Loss: 0.357309 | Image2Text Acc: 91.02 | Text2Image Acc: 85.55 | Data Time: 0.036s | Batch Time: 1.205s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:33:34 | INFO | Rank 0 | Global Steps: 2870/19560 | Train Epoch: 3 [233984/250368 (93%)] | Loss: 0.328407 | Image2Text Acc: 90.62 | Text2Image Acc: 89.45 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:33:46 | INFO | Rank 0 | Global Steps: 2880/19560 | Train Epoch: 3 [236544/250368 (94%)] | Loss: 0.395595 | Image2Text Acc: 89.06 | Text2Image Acc: 88.28 | Data Time: 0.031s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:33:58 | INFO | Rank 0 | Global Steps: 2890/19560 | Train Epoch: 3 [239104/250368 (96%)] | Loss: 0.341616 | Image2Text Acc: 87.50 | Text2Image Acc: 91.41 | Data Time: 0.029s | Batch Time: 1.205s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:34:10 | INFO | Rank 0 | Global Steps: 2900/19560 | Train Epoch: 3 [241664/250368 (97%)] | Loss: 0.345663 | Image2Text Acc: 90.62 | Text2Image Acc: 90.62 | Data Time: 0.030s | Batch Time: 1.209s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:34:22 | INFO | Rank 0 | Global Steps: 2910/19560 | Train Epoch: 3 [244224/250368 (98%)] | Loss: 0.366566 | Image2Text Acc: 87.11 | Text2Image Acc: 89.06 | Data Time: 0.026s | Batch Time: 1.208s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:34:34 | INFO | Rank 0 | Global Steps: 2920/19560 | Train Epoch: 3 [246784/250368 (99%)] | Loss: 0.321402 | Image2Text Acc: 87.89 | Text2Image Acc: 90.62 | Data Time: 0.029s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:34:46 | INFO | Rank 0 | Global Steps: 2930/19560 | Train Epoch: 3 [249344/250368 (100%)] | Loss: 0.376641 | Image2Text Acc: 88.28 | Text2Image Acc: 89.06 | Data Time: 0.029s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:34:51 | INFO | Rank 3 | Begin to eval on validation set (epoch 3 @ 2934 steps)...
+2024-05-29,22:34:51 | INFO | Rank 2 | Begin to eval on validation set (epoch 3 @ 2934 steps)...
+2024-05-29,22:34:51 | INFO | Rank 1 | Begin to eval on validation set (epoch 3 @ 2934 steps)...
+2024-05-29,22:34:51 | INFO | Rank 0 | Begin to eval on validation set (epoch 3 @ 2934 steps)...
+2024-05-29,22:37:16 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:37:16 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:37:17 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:37:17 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:37:46 | INFO | Rank 2 | Validation Result (epoch 3 @ 2934 steps) | Valid Loss: 0.187282 | Image2Text Acc: 94.45 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:37:46 | INFO | Rank 1 | Validation Result (epoch 3 @ 2934 steps) | Valid Loss: 0.187282 | Image2Text Acc: 94.45 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:37:46 | INFO | Rank 3 | Validation Result (epoch 3 @ 2934 steps) | Valid Loss: 0.187282 | Image2Text Acc: 94.45 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:37:46 | INFO | Rank 0 | Validation Result (epoch 3 @ 2934 steps) | Valid Loss: 0.187282 | Image2Text Acc: 94.45 | Text2Image Acc: 93.96 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:37:47 | INFO | Rank 2 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,22:37:47 | INFO | Rank 1 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,22:37:47 | INFO | Rank 3 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,22:37:47 | INFO | Rank 0 | train LMDB file contains 129380 images and 250314 pairs.
+2024-05-29,22:37:47 | INFO | Rank 2 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,22:37:47 | INFO | Rank 3 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,22:37:47 | INFO | Rank 1 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,22:37:47 | INFO | Rank 0 | val LMDB file contains 29806 images and 30588 pairs.
+2024-05-29,22:37:47 | INFO | Rank 2 | Start epoch 4
+2024-05-29,22:37:47 | INFO | Rank 3 | Start epoch 4
+2024-05-29,22:37:47 | INFO | Rank 1 | Start epoch 4
+2024-05-29,22:38:27 | INFO | Rank 0 | Saved checkpoint /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints/epoch3.pt (epoch 3 @ 2934 steps) (writing took 39.73791170120239 seconds)
+2024-05-29,22:39:06 | INFO | Rank 0 | Saved checkpoint /mnt/petrelfs/lijiaxing1/lijiaxing/Chinese-CLIP/data/experiments/li_finetune_5.29_vit-h-14_roberta-base_bs128_4gpu/checkpoints/epoch_latest.pt (epoch 3 @ 2934 steps) (writing took 39.817832708358765 seconds)
+2024-05-29,22:39:14 | INFO | Rank 0 | Global Steps: 2940/19560 | Train Epoch: 4 [1536/250368 (1%)] | Loss: 0.270953 | Image2Text Acc: 92.19 | Text2Image Acc: 92.58 | Data Time: 0.025s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:39:26 | INFO | Rank 0 | Global Steps: 2950/19560 | Train Epoch: 4 [4096/250368 (2%)] | Loss: 0.338282 | Image2Text Acc: 89.45 | Text2Image Acc: 90.62 | Data Time: 0.026s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:39:38 | INFO | Rank 0 | Global Steps: 2960/19560 | Train Epoch: 4 [6656/250368 (3%)] | Loss: 0.396795 | Image2Text Acc: 88.67 | Text2Image Acc: 88.67 | Data Time: 0.027s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:39:50 | INFO | Rank 0 | Global Steps: 2970/19560 | Train Epoch: 4 [9216/250368 (4%)] | Loss: 0.251936 | Image2Text Acc: 91.80 | Text2Image Acc: 92.58 | Data Time: 0.027s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:40:02 | INFO | Rank 0 | Global Steps: 2980/19560 | Train Epoch: 4 [11776/250368 (5%)] | Loss: 0.299552 | Image2Text Acc: 90.62 | Text2Image Acc: 89.06 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:40:14 | INFO | Rank 0 | Global Steps: 2990/19560 | Train Epoch: 4 [14336/250368 (6%)] | Loss: 0.298268 | Image2Text Acc: 90.62 | Text2Image Acc: 89.06 | Data Time: 0.026s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:40:26 | INFO | Rank 2 | Begin to eval on validation set (epoch 4 @ 3000 steps)...
+2024-05-29,22:40:26 | INFO | Rank 3 | Begin to eval on validation set (epoch 4 @ 3000 steps)...
+2024-05-29,22:40:26 | INFO | Rank 1 | Begin to eval on validation set (epoch 4 @ 3000 steps)...
+2024-05-29,22:40:26 | INFO | Rank 0 | Global Steps: 3000/19560 | Train Epoch: 4 [16896/250368 (7%)] | Loss: 0.279761 | Image2Text Acc: 89.84 | Text2Image Acc: 89.84 | Data Time: 0.026s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:40:26 | INFO | Rank 0 | Begin to eval on validation set (epoch 4 @ 3000 steps)...
+2024-05-29,22:42:51 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:42:51 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:42:51 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:42:52 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:43:22 | INFO | Rank 2 | Validation Result (epoch 4 @ 3000 steps) | Valid Loss: 0.197797 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:43:22 | INFO | Rank 1 | Validation Result (epoch 4 @ 3000 steps) | Valid Loss: 0.197797 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:43:22 | INFO | Rank 3 | Validation Result (epoch 4 @ 3000 steps) | Valid Loss: 0.197797 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:43:22 | INFO | Rank 0 | Validation Result (epoch 4 @ 3000 steps) | Valid Loss: 0.197797 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:43:34 | INFO | Rank 0 | Global Steps: 3010/19560 | Train Epoch: 4 [19456/250368 (8%)] | Loss: 0.250927 | Image2Text Acc: 91.41 | Text2Image Acc: 89.06 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:43:46 | INFO | Rank 0 | Global Steps: 3020/19560 | Train Epoch: 4 [22016/250368 (9%)] | Loss: 0.303673 | Image2Text Acc: 90.62 | Text2Image Acc: 90.23 | Data Time: 0.027s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:43:58 | INFO | Rank 0 | Global Steps: 3030/19560 | Train Epoch: 4 [24576/250368 (10%)] | Loss: 0.201786 | Image2Text Acc: 91.80 | Text2Image Acc: 93.75 | Data Time: 0.027s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:44:10 | INFO | Rank 0 | Global Steps: 3040/19560 | Train Epoch: 4 [27136/250368 (11%)] | Loss: 0.379279 | Image2Text Acc: 88.67 | Text2Image Acc: 87.89 | Data Time: 0.026s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:44:22 | INFO | Rank 0 | Global Steps: 3050/19560 | Train Epoch: 4 [29696/250368 (12%)] | Loss: 0.181745 | Image2Text Acc: 94.92 | Text2Image Acc: 93.36 | Data Time: 0.027s | Batch Time: 1.210s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:44:34 | INFO | Rank 0 | Global Steps: 3060/19560 | Train Epoch: 4 [32256/250368 (13%)] | Loss: 0.297561 | Image2Text Acc: 90.23 | Text2Image Acc: 89.45 | Data Time: 0.027s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:44:46 | INFO | Rank 0 | Global Steps: 3070/19560 | Train Epoch: 4 [34816/250368 (14%)] | Loss: 0.292280 | Image2Text Acc: 92.19 | Text2Image Acc: 87.89 | Data Time: 0.026s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:44:58 | INFO | Rank 0 | Global Steps: 3080/19560 | Train Epoch: 4 [37376/250368 (15%)] | Loss: 0.283027 | Image2Text Acc: 91.41 | Text2Image Acc: 89.45 | Data Time: 0.029s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:45:10 | INFO | Rank 0 | Global Steps: 3090/19560 | Train Epoch: 4 [39936/250368 (16%)] | Loss: 0.323283 | Image2Text Acc: 89.06 | Text2Image Acc: 88.67 | Data Time: 0.027s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:45:21 | INFO | Rank 0 | Global Steps: 3100/19560 | Train Epoch: 4 [42496/250368 (17%)] | Loss: 0.308450 | Image2Text Acc: 89.06 | Text2Image Acc: 89.45 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:45:33 | INFO | Rank 0 | Global Steps: 3110/19560 | Train Epoch: 4 [45056/250368 (18%)] | Loss: 0.310049 | Image2Text Acc: 91.80 | Text2Image Acc: 88.28 | Data Time: 0.026s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:45:45 | INFO | Rank 0 | Global Steps: 3120/19560 | Train Epoch: 4 [47616/250368 (19%)] | Loss: 0.370264 | Image2Text Acc: 92.19 | Text2Image Acc: 87.89 | Data Time: 0.032s | Batch Time: 1.205s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:45:58 | INFO | Rank 0 | Global Steps: 3130/19560 | Train Epoch: 4 [50176/250368 (20%)] | Loss: 0.319914 | Image2Text Acc: 90.23 | Text2Image Acc: 89.45 | Data Time: 0.031s | Batch Time: 1.199s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:46:10 | INFO | Rank 0 | Global Steps: 3140/19560 | Train Epoch: 4 [52736/250368 (21%)] | Loss: 0.231575 | Image2Text Acc: 91.41 | Text2Image Acc: 90.62 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:46:21 | INFO | Rank 3 | Begin to eval on validation set (epoch 4 @ 3150 steps)...
+2024-05-29,22:46:21 | INFO | Rank 1 | Begin to eval on validation set (epoch 4 @ 3150 steps)...
+2024-05-29,22:46:21 | INFO | Rank 2 | Begin to eval on validation set (epoch 4 @ 3150 steps)...
+2024-05-29,22:46:21 | INFO | Rank 0 | Global Steps: 3150/19560 | Train Epoch: 4 [55296/250368 (22%)] | Loss: 0.215113 | Image2Text Acc: 92.58 | Text2Image Acc: 91.80 | Data Time: 0.030s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:46:21 | INFO | Rank 0 | Begin to eval on validation set (epoch 4 @ 3150 steps)...
+2024-05-29,22:48:46 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:48:46 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:48:47 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:48:47 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:49:17 | INFO | Rank 2 | Validation Result (epoch 4 @ 3150 steps) | Valid Loss: 0.198774 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:49:17 | INFO | Rank 3 | Validation Result (epoch 4 @ 3150 steps) | Valid Loss: 0.198774 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:49:17 | INFO | Rank 1 | Validation Result (epoch 4 @ 3150 steps) | Valid Loss: 0.198774 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:49:17 | INFO | Rank 0 | Validation Result (epoch 4 @ 3150 steps) | Valid Loss: 0.198774 | Image2Text Acc: 94.37 | Text2Image Acc: 93.95 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:49:29 | INFO | Rank 0 | Global Steps: 3160/19560 | Train Epoch: 4 [57856/250368 (23%)] | Loss: 0.236977 | Image2Text Acc: 92.97 | Text2Image Acc: 89.45 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:49:41 | INFO | Rank 0 | Global Steps: 3170/19560 | Train Epoch: 4 [60416/250368 (24%)] | Loss: 0.321228 | Image2Text Acc: 89.06 | Text2Image Acc: 89.45 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:49:53 | INFO | Rank 0 | Global Steps: 3180/19560 | Train Epoch: 4 [62976/250368 (25%)] | Loss: 0.299308 | Image2Text Acc: 90.62 | Text2Image Acc: 91.02 | Data Time: 0.027s | Batch Time: 1.194s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:50:05 | INFO | Rank 0 | Global Steps: 3190/19560 | Train Epoch: 4 [65536/250368 (26%)] | Loss: 0.180334 | Image2Text Acc: 93.36 | Text2Image Acc: 94.92 | Data Time: 0.027s | Batch Time: 1.200s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:50:17 | INFO | Rank 0 | Global Steps: 3200/19560 | Train Epoch: 4 [68096/250368 (27%)] | Loss: 0.285545 | Image2Text Acc: 89.45 | Text2Image Acc: 90.23 | Data Time: 0.027s | Batch Time: 1.195s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:50:29 | INFO | Rank 0 | Global Steps: 3210/19560 | Train Epoch: 4 [70656/250368 (28%)] | Loss: 0.336542 | Image2Text Acc: 88.28 | Text2Image Acc: 89.84 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:50:41 | INFO | Rank 0 | Global Steps: 3220/19560 | Train Epoch: 4 [73216/250368 (29%)] | Loss: 0.273779 | Image2Text Acc: 91.41 | Text2Image Acc: 91.02 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:50:53 | INFO | Rank 0 | Global Steps: 3230/19560 | Train Epoch: 4 [75776/250368 (30%)] | Loss: 0.344232 | Image2Text Acc: 89.84 | Text2Image Acc: 90.23 | Data Time: 0.025s | Batch Time: 1.201s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:51:05 | INFO | Rank 0 | Global Steps: 3240/19560 | Train Epoch: 4 [78336/250368 (31%)] | Loss: 0.258713 | Image2Text Acc: 93.75 | Text2Image Acc: 92.19 | Data Time: 0.028s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:51:17 | INFO | Rank 0 | Global Steps: 3250/19560 | Train Epoch: 4 [80896/250368 (32%)] | Loss: 0.285852 | Image2Text Acc: 91.02 | Text2Image Acc: 91.41 | Data Time: 0.028s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:51:29 | INFO | Rank 0 | Global Steps: 3260/19560 | Train Epoch: 4 [83456/250368 (33%)] | Loss: 0.272199 | Image2Text Acc: 91.02 | Text2Image Acc: 91.80 | Data Time: 0.027s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:51:41 | INFO | Rank 0 | Global Steps: 3270/19560 | Train Epoch: 4 [86016/250368 (34%)] | Loss: 0.283261 | Image2Text Acc: 90.62 | Text2Image Acc: 89.45 | Data Time: 0.026s | Batch Time: 1.196s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:51:53 | INFO | Rank 0 | Global Steps: 3280/19560 | Train Epoch: 4 [88576/250368 (35%)] | Loss: 0.268681 | Image2Text Acc: 89.84 | Text2Image Acc: 91.41 | Data Time: 0.027s | Batch Time: 1.197s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:52:05 | INFO | Rank 0 | Global Steps: 3290/19560 | Train Epoch: 4 [91136/250368 (36%)] | Loss: 0.229016 | Image2Text Acc: 90.62 | Text2Image Acc: 92.97 | Data Time: 0.026s | Batch Time: 1.210s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:52:17 | INFO | Rank 3 | Begin to eval on validation set (epoch 4 @ 3300 steps)...
+2024-05-29,22:52:17 | INFO | Rank 2 | Begin to eval on validation set (epoch 4 @ 3300 steps)...
+2024-05-29,22:52:17 | INFO | Rank 1 | Begin to eval on validation set (epoch 4 @ 3300 steps)...
+2024-05-29,22:52:17 | INFO | Rank 0 | Global Steps: 3300/19560 | Train Epoch: 4 [93696/250368 (37%)] | Loss: 0.200493 | Image2Text Acc: 94.53 | Text2Image Acc: 95.31 | Data Time: 0.029s | Batch Time: 1.198s | LR: 0.000003 | logit_scale: 4.605 | Global Batch Size: 256
+2024-05-29,22:52:17 | INFO | Rank 0 | Begin to eval on validation set (epoch 4 @ 3300 steps)...
+2024-05-29,22:54:42 | INFO | Rank 3 | Evaluated 100/120 batches...
+2024-05-29,22:54:42 | INFO | Rank 0 | Evaluated 100/120 batches...
+2024-05-29,22:54:42 | INFO | Rank 1 | Evaluated 100/120 batches...
+2024-05-29,22:54:43 | INFO | Rank 2 | Evaluated 100/120 batches...
+2024-05-29,22:55:12 | INFO | Rank 2 | Validation Result (epoch 4 @ 3300 steps) | Valid Loss: 0.200569 | Image2Text Acc: 94.41 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:55:12 | INFO | Rank 1 | Validation Result (epoch 4 @ 3300 steps) | Valid Loss: 0.200569 | Image2Text Acc: 94.41 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:55:12 | INFO | Rank 3 | Validation Result (epoch 4 @ 3300 steps) | Valid Loss: 0.200569 | Image2Text Acc: 94.41 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+2024-05-29,22:55:12 | INFO | Rank 0 | Validation Result (epoch 4 @ 3300 steps) | Valid Loss: 0.200569 | Image2Text Acc: 94.41 | Text2Image Acc: 93.81 | logit_scale: 4.605 | Valid Batch Size: 64
+srun: Force Terminated job 3517309
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+srun: Easily find out why your job was killed by following the link below:
+	https://docs.phoenix.sensetime.com/FAQ/SlurmFAQ/Find-out-why-my-job-was-killed/
+slurmstepd: error: *** STEP 3517309.0 ON SH-IDC1-10-140-24-48 CANCELLED AT 2024-05-29T22:55:12 ***
+WARNING:torch.distributed.elastic.agent.server.api:Received 15 death signal, shutting down workers
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 102809 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 102810 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 102811 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 102812 closing signal SIGTERM
+srun: error: Timed out waiting for job step to complete
